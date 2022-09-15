@@ -24,10 +24,11 @@ h2{
     
 
 }
-.card-text h5{
+h5{
     color:navy;
     text-align: center;
-    font-size: px;
+    font-size: 23px;
+
     
 }
 
@@ -37,5 +38,16 @@ h2{
     text-align: center;
     justify-items: center;
     align-items: center;
+    border: 2px solid black;
 
+}
+.card{
+    box-shadow: 8px 8px 8px crimson;
+}
+.card-img-top{
+    border: 3px solid navy;
+}
+.card:hover{
+    transform: scale(1.08);
+ 
 }
