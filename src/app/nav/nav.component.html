@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color: gold;">
+        <img [src] ="logo" alt="" width="50" height="35" class="d-inline-block align-text-top">
+      </a>
+      <h5 style="color: gold;">{{title}}</h5>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="products">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="contact">Contact Us</a>
+          </li>
+          </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" #productname placeholder="Enter product name"type="search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit" (click)="search_product(productname.value);productname.value=''">Search</button>
+          <app-search [product]="productentered"></app-search>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+  <!--<div class="container-fluid" style="background-color: gold; height: 75px; padding-top: 10px;">
+
+
+  <h1 style="text-align:center;" [(ngModel)]="name"><i>Welcome To TechKart {{name}}!!!</i></h1>
+  </div>-->
+  
+   
+  

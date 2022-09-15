@@ -1,0 +1,69 @@
+<!--<div class="container-fluid" style="background-color: black;">
+        <h2 class="p-4 mb-4" id="services">Products</h2><br><br>
+   
+<div class="row">
+    <div class="container">
+        <div *ngFor="let pdetails of ProductDetails" [ngSwitch]="pdetails.status">
+            <div class="col-lg-4 col-md-4 col-12" *ngIf="isVisible">
+         
+        
+            <div class="card" style="width:18rem; height:26rem;">
+                <img src="{{pdetails.image}}" class="img-fluid" alt="">
+            
+            <div class="card-body">
+                <h3 class="card-title"></h3>
+                <p class="text-second">Acer Predator Gaming Laptop</p>
+          
+            
+            <button type="button" class="btn1 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Buy Now
+            </button>
+            </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <button (click)="hide_products()">Hide the Product details</button>
+  
+</div>
+</div>-->
+<div class="container-fluid">
+    <h1 class="heading">Our products</h1>
+      <div class="row">
+          <div>
+              <div class="container">
+               <div class="col-lg-4 col-md-4 col-12">
+                  <div class="card" fxFlex="32" style="width: 18rem; height: 25rem;" *ngFor="let prods of ProductDetails" [ngSwitch]="prods.status">
+                  <img src={{prods.pimage}} class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">{{prods.pname}}</h5>
+                    <p [style.color]="'black'" class="card-text">{{prods.pdesc}}</p>
+                    <!-- <p class="card-text green">{{prods.status}}</p> -->
+                    <div class="textcontainer">
+                    <p *ngSwitchCase="'Active'" class="text-success">
+                      {{prods.status}}
+                    </p>
+                    <p *ngSwitchCase="'InActive'" class="text-warning">
+                      {{prods.status}}
+                    </p>
+                    <p *ngSwitchCase="'Out of Stock'" class="text-danger">
+                      {{prods.status}}
+                    </p>
+                    <p>100</p>
+                  </div>
+                  </div>
+                  <div class="newbtn">
+                <button class="btn firstbtn">
+                   <img src="assets/25.png" alt="">
+                </button>
+                  </div>
+                  
+                </div> 
+                <br>
+                </div> 
+             </div>
+  
+      </div>
+      </div>
+   
+  </div>

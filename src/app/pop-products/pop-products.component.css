@@ -1,0 +1,41 @@
+.container{
+    display:grid;
+    place-items: center;
+}
+.card-img-top{
+    height: 250px;
+}
+h2{
+    color:gold;
+    font-size: 40px;
+    font-style: italic;
+    margin-top:35px;
+    text-align: center;
+}
+
+.card-title{
+    text-align: center;
+    font-weight: bold;
+}
+.card-text{
+    text-align: center;
+    font-style: italic;
+    font-size: 17px;
+    
+
+}
+.card-text h5{
+    color:navy;
+    text-align: center;
+    font-size: px;
+    
+}
+
+.btn{
+    width:50%;
+    margin-left: 25%;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+
+}

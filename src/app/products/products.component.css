@@ -1,0 +1,164 @@
+/*.container{
+    display: grid;
+    place-items: center;
+  }
+  .container-fluid{
+    background-color: black;
+}
+
+.card{
+  width: 100%;
+  height: 100%;
+}
+
+.card-text{
+  text-size-adjust :initial;
+}
+
+.card img{
+    height: 150px;
+}
+
+
+h2{
+    color: gold;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+.card-box {
+    border: 3px solid gold;
+    border-radius: 30px;
+  }
+  .text-danger{
+    display: grid;
+    font-size: 20px;
+    text-align: center;
+    color:red;
+  }
+  .text-second{
+    color: blue;
+    text-align: justify;
+    font-size: 17px;
+    font-family: cursive;
+    line-height: 1.2 cm;
+  }
+ 
+
+  .btn1{
+   
+    text-align: center;
+    
+    background-color: navy;
+    color: yellow;
+    width:50%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid red;
+
+  }
+  .btn1:hover{
+    background-color: rgb(38, 47, 231);
+  }
+  .btn2{
+   
+   text-align: center;
+   
+   background-color: navy;
+   color: yellow;
+   width:50%;
+   padding: 10px;
+   border-radius: 20px;
+   border: 2px solid red;
+
+ }
+ .btn2:hover{
+   background-color: rgb(38, 47, 231);
+ }
+ .btn3{
+   
+   text-align: center;
+   
+   background-color: navy;
+   color: yellow;
+   width:50%;
+   padding: 10px;
+   border-radius: 20px;
+   border: 2px solid red;
+
+ }
+ .btn3:hover{
+   background-color: rgb(38, 47, 231);
+ }
+ p {
+    color: white;
+    text-align: justify;
+    font-size: 20px;
+    font-family: cursive;
+    line-height: 1.4 cm;
+
+  }*/
+  .container{
+    display: grid;
+    place-items: center;
+  }
+  
+  .container-fluid{
+      background-color: black;
+  }
+  
+  .card{
+    width: 100%;
+    height: 100%;
+   
+  }
+  
+  .card-text{
+    text-size-adjust :initial;
+  }
+  
+  .card img{
+      height: 150px;
+  }
+  
+  .firstbtn{
+    border: 1px solid black;
+    background-color: white;
+    width: 100px;
+      margin: 3px;  
+  }
+  
+  .firstbtn img{
+    width: 30px;
+    height: 23px;
+  }
+  .newbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .heading{
+    text-align: center;
+    color: white;
+    font-family: fangsong;
+    font-size: 3.5pc;
+    margin: 23p;
+    padding: 15px;
+  }
+  
+  .card-text{
+    font-family: fangsong;
+    text-align: center;
+  }
+  .green{
+    color: green;
+  }
+  
+  .textcontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
