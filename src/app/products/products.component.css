@@ -99,7 +99,7 @@ h2{
     line-height: 1.4 cm;
 
   }*/
-  .container{
+  /*.container{
     display: grid;
     place-items: center;
   }
@@ -160,5 +160,67 @@ h2{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-  }
+  }*/
   
+  .container{
+    display:grid;
+    place-items: center;
+}
+.card-img-top{
+    height: 250px;
+}
+h2{
+    color:gold;
+    font-size: 40px;
+    font-style: italic;
+    margin-top:35px;
+    margin-bottom:20px;
+    text-align: center;
+}
+
+.card-title{
+    text-align: center;
+    font-weight: bold;
+    flex: 1 1 auto;
+}
+.card-text{
+    text-align: center;
+    font-style: italic;
+    font-size: 17px;
+    text-size-adjust: initial;
+    flex: 1 1 auto;
+
+}
+h5{
+    color:navy;
+    text-align: center;
+    font-size: 23px;
+
+    
+}
+
+.btn{
+    width:50%;
+    margin-left: 25%;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    border: 2px solid black;
+
+}
+/*.card{
+    box-shadow: 8px 8px 8px crimson;
+    display: flex;
+    flex-direction: column;
+}*/
+.card-img-top{
+    border: 3px solid navy;
+}
+.card:hover{
+    transform: scale(1.08);
+ 
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+}

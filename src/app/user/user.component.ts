@@ -19,6 +19,7 @@ export class UserComponent implements OnInit {
   //To pass information between components we have @Input and @Output
 
   @Input('usern')//username
+  
 
   //write
   set uname(uname:any) //username

@@ -15,9 +15,17 @@
           <li class="nav-item">
             <a class="nav-link" routerLink="about">About Us</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="products">Products</a>
-          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" routerLink="allproducts">All Products</a></li>
+              <li><a class="dropdown-item" routerLink="products">Mobile & Laptops</a></li>
+              <li><a class="dropdown-item" routerLink="home_appliance">Home Appliances</a></li>
+              <li><a class="dropdown-item" routerLink="sports">Sports & Music</a></li>
+            </ul>
+          </li>      
           <li class="nav-item">
             <a class="nav-link" routerLink="contact">Contact Us</a>
           </li>

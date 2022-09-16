@@ -1,0 +1,75 @@
+[
+    {
+        "pid":1,
+        "pname":"Kids Frock",
+        "pdesc":"Kids dress for girls between 4 - 6 years old",
+        "status":"In Stock",
+        "price":750,
+        "pimage":"https://th.bing.com/th/id/OIP.p9mcy1s4fqQiU1wJczY7fAHaHK?w=186&h=179&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+    },
+    {
+        "pid":2,
+        "pname":"Kids Building Blocks",
+        "pdesc":"Kids toys for age between 4 - 6 years old",
+        "status":"Few In Stock",
+        "price":1000,
+        "pimage":"https://th.bing.com/th/id/OIP.Gd6ov_glKB2t4KzG4vYWbwHaHa?pid=ImgDet&rs=1"
+    },
+    {
+        "pid":3,
+        "pname":"Dell Inspiron 15",
+        "pdesc":"Dell Laptop",
+        "status":"Out Of Stock",
+        "price":45000,
+        "pimage":"https://th.bing.com/th/id/OIP.w1nfH9XM1EoRpGvSyc-HHQHaHa?pid=ImgDet&rs=1"
+    },
+    {
+        "pid":4,
+        "pname":"Jabra Headphones",
+        "pdesc":"Jabra Headphones",
+        "status":"In Stock",
+        "price":3500,
+        "pimage":"https://th.bing.com/th/id/OIP.6fUrfdYdaP2E2FMAwbmviQHaHa?pid=ImgDet&rs=1"
+    },
+    {
+        "pid":5,
+        "pname":"Titan Watch",
+        "pdesc":"Titan watch for girls",
+        "status":"Few In Stock",
+        "price":1500,
+        "pimage":"https://static-01.daraz.com.np/p/483739b555784acbee3874e5d9f8ffb0.jpg"
+    },
+    {
+        "pid":6,
+        "pname":"Sony TV",
+        "pdesc":"Sony Bravia LED TV - 65 inch",
+        "status":"Out Of Stock",
+        "price":35000,
+        "pimage":"https://th.bing.com/th/id/OIP.z35a_DfUQDnaHz2Nh8y7OgHaHa?pid=ImgDet&rs=1"
+    },
+    {
+        "pid":6,
+        "pname":"Sony TV",
+        "pdesc":"Sony Bravia LED TV - 65 inch",
+        "status":"Few In Stock",
+        "price":35000,
+        "pimage":"https://th.bing.com/th/id/OIP.z35a_DfUQDnaHz2Nh8y7OgHaHa?pid=ImgDet&rs=1"
+    },
+    {
+        "pid":6,
+        "pname":"Sony TV",
+        "pdesc":"Sony Bravia LED TV - 65 inch",
+        "status":"In Stock",
+        "price":35000,
+        "pimage":"https://th.bing.com/th/id/OIP.z35a_DfUQDnaHz2Nh8y7OgHaHa?pid=ImgDet&rs=1"
+    },
+    {
+        "pid":6,
+        "pname":"Sony TV",
+        "pdesc":"Sony Bravia LED TV - 65 inch",
+        "status":"In Stock",
+        "price":35000,
+        "pimage":"https://th.bing.com/th/id/OIP.z35a_DfUQDnaHz2Nh8y7OgHaHa?pid=ImgDet&rs=1"
+    }
+
+]

@@ -11,6 +11,9 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { UserComponent } from './user/user.component';
 import { PopProductsComponent } from './pop-products/pop-products.component';
+import { HomeApplianceComponent } from './home-appliance/home-appliance.component';
+import { SportsComponent } from './sports/sports.component';
+import { AllProductsComponent } from './all-products/all-products.component';
 
 
 @NgModule({
@@ -23,7 +26,10 @@ import { PopProductsComponent } from './pop-products/pop-products.component';
     ContactComponent,
     AboutComponent,
     UserComponent,
-    PopProductsComponent
+    PopProductsComponent,
+    HomeApplianceComponent,
+    SportsComponent,
+    AllProductsComponent
     
   ],
   imports: [
