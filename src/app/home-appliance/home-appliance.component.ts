@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import * as home_appliance from "../data/home_appliance.json";
+import { Component, OnInit, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-home-appliance',
@@ -9,6 +9,9 @@ import * as home_appliance from "../data/home_appliance.json";
 export class HomeApplianceComponent implements OnInit {
 
   constructor() { }
+  @Input()product:any
+ 
+ 
   isVisible: boolean = false;
   hide_products() {
     this.isVisible = !this.isVisible;
@@ -16,7 +19,7 @@ export class HomeApplianceComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  appliance:any=(home_appliance as any).default;
+  
   
   productDetail=true;
   //Event to perform the toggle effect

@@ -1,0 +1,36 @@
+
+.card-img-top{
+    height: 250px;
+}
+h2{
+    color:gold;
+    font-size: 40px;
+    font-style: italic;
+    margin-top:35px;
+    margin-bottom:20px;
+    text-align: center;
+}
+
+
+h5{
+    color:navy;
+    text-align: center;
+    font-size: 23px;
+
+    
+}
+
+.btn{
+    width:50%;
+    margin-left: 25%;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    border: 2px solid black;
+
+}
+@media screen and (max-width: 599px){
+    .column{
+        text-align: center;
+    }
+}

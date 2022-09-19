@@ -1,0 +1,26 @@
+
+
+h2{
+    color:gold;
+    font-size: 40px;
+    font-style: italic;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 25px;
+    flex: 1 1 auto;
+}
+
+.card:hover{
+    transform: scale(1.08);
+ 
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+}

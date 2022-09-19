@@ -6,11 +6,23 @@
   }
 
   
-  p {
+  .container-fluid p {
     color: white;
     text-align: justify;
     font-size: 20px;
     font-family: cursive;
-    line-height: 1.4 cm;
+    line-height: 1.2cm;
 
+  }
+  img{
+    opacity: 0.5;
+  }
+  img:hover{
+    transition: 2s;
+    opacity: 1;
+  }
+
+  h2{
+    color:Red;
+    
   }

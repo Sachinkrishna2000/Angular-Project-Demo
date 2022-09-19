@@ -1,36 +1,31 @@
-<!--<div class="container-fluid  w-100" style="background-color: black; height: 200px;"><h2><marquee>Deal Of The Day</marquee></h2></div>-->
-<div class="container-fluid p-0 m-0 align-items-center justify-content-center d-flex" style="min-height: 100vh; background-color: black;">
-   
-    <!-- Row for the card-->
-    
-    <div class="row w-100 w-0">
-        <h2><marquee>Electronics</marquee></h2>
-        <!-- Column for card-->
-        <button type="button" class="btn btn-default" style="background-color: gold;" (click)="hide_products()">Show Products<i class="fa fa-arrow-down"></i></button>
-        <div class="col-lg-4 mb-4 mt-4" *ngFor="let prods of ProductDetails">
-            <div class="card mx-auto h-100" style="width:18rem; background-color: gold; border: 4px solid red;  box-shadow: 8px 8px 8px crimson;" [ngSwitch]="prods.status" *ngIf="isVisible">
-                <img class="card-img-top" src={{prods.pimage}} alt="Card image cap">
+<!-- class="col col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-4 mb-4"-->
+<!-- <div class="container-fluid p-0 m-0 align-items-center justify-content-center d-flex" style=" background-color: black;"> -->
+    <!-- <div class="row w-100 w-0"> -->
+        <!-- <div class="col col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-4 mb-4"> -->
+            <div class="card mx-auto"
+                style="width:18rem; background-color: gold; border: 4px solid red;  box-shadow: 8px 8px 8px crimson; max-width: 100%;"
+                [ngSwitch]="product.status">
+                <img class="card-img-top" src={{product.pimage}} alt="Card image cap">
 
                 <div class="card-body">
-                    
-                    <h4 class="card-title mb-4">{{prods.pid}}. {{prods.pname | uppercase}} <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span></h4>
-                    
-                    <div  [hidden]="productDetail">
-                    <p class="card-text">{{prods.pdesc}}</p>
-                    <h5>{{prods.price | currency: "INR"}}</h5>
+
+                    <h4 class="card-title mb-4">{{product.pid}}. {{product.pname | uppercase}} <span
+                            (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span></h4>
+
+                    <div [hidden]="productDetail">
+                        <p class="card-text">{{product.pdesc}}</p>
+                        <app-counter></app-counter>
+                        <h5>{{product.price | currency: "INR"}}</h5>
+                        
                     </div>
-                   
-                    <button  *ngSwitchCase="'In Stock'" class="btn btn-outline-success" type="submit">In Stock</button>
-                    <button  *ngSwitchCase="'Few In Stock'" class="btn btn-outline-warning" type="submit" style="color:black;">Few In Stock</button>
-                    <button  *ngSwitchCase="'Out Of Stock'" class="btn btn-outline-danger" type="submit">Out Of Stock</button>
-                
+
+                    <button *ngSwitchCase="'In Stock'" class="btn btn-outline-success" type="submit" (click)="InStock()">In Stock</button>
+                    <button *ngSwitchCase="'Few In Stock'" class="btn btn-outline-warning" type="submit"
+                        style="color:black;" (click)="FewInStock()">Few In Stock</button>
+                    <button *ngSwitchCase="'Out Of Stock'" class="btn btn-outline-danger" type="submit" (click)="OutOfStock()">Out Of
+                        Stock</button>
                 </div>
             </div>
-        </div>
-        
-        
-    </div>
-    
-    
-    
-</div>
+         <!-- </div>  -->
+    <!-- </div> -->
+<!-- </div> -->

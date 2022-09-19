@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import * as sports from "../data/sports.json";
+import { Component, OnInit, Input } from '@angular/core';
+/*import * as sports from "../data/sports.json";*/
+
 
 @Component({
   selector: 'app-sports',
@@ -8,16 +9,16 @@ import * as sports from "../data/sports.json";
 })
 export class SportsComponent implements OnInit {
 
-  constructor() { }
 
-  isVisible: boolean = false;
-  hide_products() {
-    this.isVisible = !this.isVisible;
-  }
+  constructor() { }
+  @Input()product:any
+
+  
 
   ngOnInit(): void {
+    
   }
-  sport:any=(sports as any).default;
+  /*sport:any=(sports as any).default;*/
   
   productDetail=true;
   //Event to perform the toggle effect
@@ -36,6 +37,16 @@ export class SportsComponent implements OnInit {
       content='fa-solid fa-arrow-up';
     }
     return content;
+  }
+  InStock(){
+    alert("Yayy!!! The Product is In Stock, Proceed To Buy");
+  }
+
+  FewInStock(){
+    alert("Hurry Up!!! Only Few Left In Stock");
+  }
+  OutOfStock(){
+    alert("Oops!!! Currently This Item Isn't Available. Please Try Again Next Time.")
   }
 
 }

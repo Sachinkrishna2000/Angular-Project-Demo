@@ -3,25 +3,28 @@
     place-items: center;
 }
 .card-img-top{
-    height: 250px;
+    height: 225px;
 }
 h2{
     color:gold;
     font-size: 40px;
     font-style: italic;
     margin-top:35px;
+    margin-bottom:20px;
     text-align: center;
 }
 
 .card-title{
     text-align: center;
     font-weight: bold;
+    flex: 1 1 auto;
 }
 .card-text{
     text-align: center;
     font-style: italic;
     font-size: 17px;
-    
+    text-size-adjust: initial;
+    flex: 1 1 auto;
 
 }
 h5{
@@ -41,13 +44,19 @@ h5{
     border: 2px solid black;
 
 }
-.card{
+/*.card{
     box-shadow: 8px 8px 8px crimson;
-}
+    display: flex;
+    flex-direction: column;
+}*/
 .card-img-top{
     border: 3px solid navy;
 }
 .card:hover{
     transform: scale(1.08);
  
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
 }

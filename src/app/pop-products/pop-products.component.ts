@@ -37,6 +37,17 @@ export class PopProductsComponent implements OnInit {
    
   ]
 
+  InStock(){
+    alert("Yayy!!! The Product is In Stock, Proceed To Buy");
+  }
+
+  FewInStock(){
+    alert("Hurry Up!!! Only Few Left In Stock");
+  }
+  
+
+
+
   ngOnInit(): void {
   }
 

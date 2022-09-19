@@ -13,25 +13,35 @@ export class UserComponent implements OnInit {
   }
   //property - _username
 
-  _username:any | undefined;
+  
   
 
-  //To pass information between components we have @Input and @Output
 
-  @Input('usern')//username
+  @Input()usernameentered:any;//username
+  @Input()passwordentered:any;//username
   
-
   //write
-  set uname(uname:any) //username
+  /*set uname(uname:any) //username
   {
-    this._username=uname || 'Enter Credentials';
+    this.usernamee=uname || 'Enter Credentials';
     console.log(uname)
   }
   //read
   get uname():string
   {
-    return this._username;
+    return this.usernamee;
   }
+
+  set pname(pname:any) //username
+  {
+    this.passwordd=pname || 'Enter Credentials';
+    console.log(pname)
+  }
+  //read
+  get pname():string
+  {
+    return this.passwordd;
+  }*/
 
 
 }

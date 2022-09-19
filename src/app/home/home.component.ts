@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,26 +8,39 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
-  usernameentered: string=' '  //username
- 
+  constructor(private router:Router) { }
+  usernameentered: string=' ';  //username
+  passwordentered: string=' ';
 
   //Event
-  searchuser(user_name:string):void{ //username
+  searchuser(user_name:string,pass_word:string):void{ //username
     if(!user_name)
     {
       this.usernameentered=' ';
       
     }
-    this.usernameentered=user_name; //username
+    else if(!pass_word){
+      this.passwordentered=' ';
+    }
+    
+      this.usernameentered=user_name; //username
+      this.passwordentered=pass_word;
+    
+    
+    
    
-    console.log(user_name)
+    console.log(this.usernameentered)
+    console.log(this.passwordentered)
+  }
+  sendmsg(){
+    
+    alert("Thank You For Your Valuable Feedback");
     
   }
-  
   
 
   ngOnInit(): void {
   }
+ 
 
 }

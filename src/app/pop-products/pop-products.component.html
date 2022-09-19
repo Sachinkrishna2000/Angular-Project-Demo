@@ -1,14 +1,14 @@
 
-<div class="container-fluid" style="background-color: black;"><h2><marquee>Deal Of The Day</marquee></h2></div>
-<div class="container-fluid p-0 m-0 align-items-center justify-content-center d-flex" style="min-height: 100vh; background-color: black;">
+<div class="container-fluid" style="background-color: black; margin: 50px 0;"><h2><marquee>Deal Of The Day</marquee></h2></div>
+<div class="container-fluid p-0 m-0 align-items-center justify-content-center d-flex" style="background-color: black;">
    
     <!-- Row for the card-->
-    <div class="row w-100 p-2 w-0">
+    <div class="row w-100 w-0">
 
         <!-- Column for card-->
-        <div class="col-lg-4 mb-2">
+        <div class="col-lg-4 col-md-6 mb-4">
             <div class="card mx-auto h-90" style="width:18rem; background-color: gold; border: 4px solid red;
-            box-shadow: crimson;">
+            box-shadow: crimson; max-width: 100%;">
                 <img class="card-img-top" src="https://m.media-amazon.com/images/I/61mIUCd-37L._SL1500_.jpg"
                     alt="Card image cap">
 
@@ -18,15 +18,15 @@
                     Snapdragon 8+ Processor<br>
                     4800 mAh, 150W Fast Charging</p>
                     <h5>₹54,999</h5>
-                    <button class="btn btn-outline-success" type="submit">In Stock</button>
+                    <button class="btn btn-outline-success" type="submit" (click)="InStock()">In Stock</button>
                 </div>
             </div>
         </div>
 
         <!-- Another column for card -->
-        <div class="col-lg-4 mb-2">
+        <div class="col-lg-4 col-md-6 mb-4">
             <div class="card mx-auto h-90" style="width:18rem; background-color: gold; border: 4px solid red;
-            box-shadow: crimson;">
+            box-shadow: crimson; max-width: 100%;">
                 <img class="card-img-top"
                     src="https://www.gadgetsnow.com/photo/78877550/Acer-Predator-Helios-300-Gaming-Laptop-Intel-i7-10750H-NVIDIA-GeForce-RTX-2070-Max-Q-8GB-156-FHD-240Hz-3ms-IPS-16GB-Dual-Channel-DDR4-512GB-NVMe-SSD-1TB-HDD-WiFi-6-RGB-KB-PH315-53-71VG.jpg"
                     alt="Card image cap">
@@ -37,15 +37,15 @@
                     NVIDIA GeForce RTX 2070 GC<br>
                         16GB RAM, 512GB Storage</p>
                     <h5>₹2,88,799</h5>
-                    <button type="button" class="btn btn-outline-warning" style="border: 2px solid black; color:black">Few In Stock</button>
+                    <button type="button" class="btn btn-outline-warning" style="border: 2px solid black; color:black" (click)="FewInStock()">Few In Stock</button>
                 </div>
             </div>
         </div>
 
         <!-- Another column for card -->
-        <div class="col-lg-4 mb-2">
+        <div class="col-lg-4 col-md-6 mb-4">
             <div class="card mx-auto h-90" style="width:18rem; background-color: gold; border: 4px solid red;
-            box-shadow: crimson;">
+            box-shadow: crimson; max-width: 100%;">
                 <img class="card-img-top" src="https://m.media-amazon.com/images/I/61gor7EwOlL._AC_SX522_.jpg" alt="Card image cap">
 
                 <div class="card-body">
@@ -54,7 +54,7 @@
                     Qualcomm® 660 Processor<br>
                     144Hz, AMOLED Display</p>
                     <h5>₹49,999</h5>
-                    <button class="btn btn-outline-success" type="submit">In Stock</button>
+                    <button class="btn btn-outline-success" type="submit" (click)="InStock()">In Stock</button>
                 </div>
             </div>
         </div>

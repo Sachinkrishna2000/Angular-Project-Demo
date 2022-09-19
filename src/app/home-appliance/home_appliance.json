@@ -1,0 +1,51 @@
+[
+    {
+        "pid":1,
+        "pname":"Samsung Refrigerator",
+        "pdesc":"657 litres capacity with Inverter and Water_dispenser ,Frost-free side-by-side refrigerator",
+        "status":"In Stock",
+        "price":174999,
+        "pimage":"https://m.media-amazon.com/images/I/51vvhIN7wpL._SY500_.jpg"
+    },
+    {
+        "pid":2,
+        "pname":"LG Refrigerator",
+        "pdesc":"889 Ltr | Instaview Door-in-Door Quick Plumbed Ice & Water Dispenser with UV Nano",
+        "status":"Few In Stock",
+        "price":267990,
+        "pimage":"https://bestbuycyprus.com/265304-large_default/lg-instaview-door-in-door-gmx945mc9f-multi-door-fridge-freezer.jpg"
+    },
+    {
+        "pid":3,
+        "pname":"Whirpool Washing Machine",
+        "pdesc":"6.5KG, Wattage - 360 W, Maximum Spin Speed - 740 RPM  Smart Sensors, Auto Tub Clean",
+        "status":"Out Of Stock",
+        "price":18990,
+        "pimage":"https://sathya.in/media/50291/catalog/whirlpool-65kg-whitemagic-classic-genx-rosewoodwine-fully-automatic-top-load-washing-machine.jpg"
+    },
+    {
+        "pid":4,
+        "pname":"Bosch Washing Machine",
+        "pdesc":"7 KG Cap with In - built Heater 1200 RPM Spinning Speed , Fully Automatic Front Load",
+        "status":"In Stock",
+        "price":34499,
+        "pimage":"https://m.media-amazon.com/images/I/71laDnTjKPL._SL1500_.jpg"
+    },
+    {
+        "pid":5,
+        "pname":"LG Microwave Oven",
+        "pdesc":"28L Capacity Programmable, Auto_cook, Control_panel_lock, Self-cleaning,Turntable",
+        "status":"Few In Stock",
+        "price":18999,
+        "pimage":"https://m.media-amazon.com/images/I/61B4gL3g+qL._SL1500_.jpg"
+    },
+    {
+        "pid":6,
+        "pname":"Samsung Microwave Oven",
+        "pdesc":"28L Capacity, Touch Keypad, Auto Cook, Preheat/Reheat, Defrost Turntable ,Child Lock",
+        "status":"Out Of Stock",
+        "price":11590,
+        "pimage":"https://m.media-amazon.com/images/I/717Kju6Tu2L._SL1500_.jpg"
+    }
+    
+]
