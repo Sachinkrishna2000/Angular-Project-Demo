@@ -12,7 +12,7 @@ export class ApplianceComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  isVisible: boolean = true;
+  isVisible: boolean = false;
   hide_products() {
     this.isVisible = !this.isVisible;
   }

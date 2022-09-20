@@ -24,7 +24,7 @@ export class RegisterComponent implements OnInit {
   gender: FormControl | any;
   address: FormControl | any;
   payment: FormControl | any;
-  int_products:FormControl | any;
+  agreement:FormControl | any;
 
   ngOnInit(): void {
     this.username = new FormControl('', [Validators.required,Validators.pattern('[A-Za-z]*'), Validators.minLength(6), Validators.maxLength(16)]);
@@ -36,7 +36,7 @@ export class RegisterComponent implements OnInit {
     this.gender= new FormControl('',[Validators.required]);
     this.address = new FormControl('',[Validators.required, Validators.maxLength(256)]);
     this.payment = new FormControl('',[Validators.required]);
-    this.int_products = new FormControl('',[Validators.requiredTrue]);
+    this.agreement = new FormControl('',[Validators.requiredTrue]);
     this.myForm = new FormGroup({
       'username': this.username,
       'useremail': this.useremail,
@@ -47,10 +47,11 @@ export class RegisterComponent implements OnInit {
       'gender': this.gender,
       'address': this.address,
       'payment':this.payment,
-      'int_products':this.int_products
+      'agreement':this.agreement
     
       
     })
+    
    
     
   }

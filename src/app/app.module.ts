@@ -23,6 +23,8 @@ import { MusicComponent } from './sports/music/music.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
 
+import { ContactsComponent } from './contacts/contacts.component';
+
 
 @NgModule({
   declarations: [
@@ -43,7 +45,8 @@ import { RegisterComponent } from './register/register.component';
     AdvertisementComponent,
     ApplianceComponent,
     MusicComponent,
-    RegisterComponent
+    RegisterComponent,
+    ContactsComponent
     
   ],
   imports: [

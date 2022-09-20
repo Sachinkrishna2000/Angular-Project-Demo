@@ -1,0 +1,114 @@
+<footer class="text-center text-lg-start text-muted">
+    <h2>Contact Details</h2><br>
+   
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style="background-color: gold;">
+       
+        <div class="me-5 d-none d-lg-block">
+            <span style="color: black;">Get connected with us on social networks:</span>
+        </div>
+        
+        <div>
+            <a href="" class="me-4 link-secondary">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+                <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+       
+    </section>
+   
+
+   
+    <section class="">
+        <div class="container text-center text-md-start mt-5" >
+            
+            <div class="row mt-3">
+                
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" *ngFor="let c of contact">
+                    
+                    <h6 class="text-uppercase fw-bold mb-4" style="color: red;">
+                        <i class="fas fa-gem me-3 text-secondary"></i>TechKart
+                    </h6>
+                    <p>
+                        {{c.pdesc}}
+                    </p>
+                </div>
+                
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" *ngFor="let c of contact">
+                   
+                    <h6 class="text-uppercase fw-bold mb-4" style="color:red;">
+                        Links
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">{{c.plink1}}</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">{{c.plink2}}</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">{{c.plink3}}</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">{{c.plink4}}</a>
+                    </p>
+                </div>
+             
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" *ngFor="let c of contact">
+                   
+                    <h6 class="text-uppercase fw-bold mb-4" style="color:red;">
+                        Products
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">{{c.product1}}</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">{{c.product2}}</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">{{c.product3}}</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">{{c.product4}}</a>
+                    </p>
+                </div>
+               
+
+               
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" *ngFor="let c of contact">
+                   
+                    <h6 class="text-uppercase fw-bold mb-4" style="color:red;">Contact</h6>
+                    <p><i class="fas fa-home me-3 text-secondary"></i>{{c.address}}</p>
+                    <p>
+                        <i class="fas fa-envelope me-3 text-secondary"></i>
+                        {{c.email}}
+                    </p>
+                    <p><i class="fas fa-phone me-3 text-secondary"></i>{{c.phone}}</p>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: gold; color:black;">
+        © 2022 Copyright:
+        <a class="text-reset fw-bold black" href="https://amazon.com/">TechKart.com</a>
+    </div>
+    <!-- Copyright -->
+</footer>

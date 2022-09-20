@@ -23,7 +23,12 @@ h5{
     text-align: center;
     justify-items: center;
     align-items: center;
-    border: 2px solid black;
+   
+    opacity:0.8;
 
 }
+.btn:hover{
+    opacity: 1.0;
+}
+
 

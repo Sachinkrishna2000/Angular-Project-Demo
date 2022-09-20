@@ -1,5 +1,4 @@
-<div class="card mx-auto"
-    style="width:18rem; background-color: gold; border: 4px solid red;  box-shadow: 8px 8px 8px crimson; max-width: 100%;"
+<div class="card mx-auto" [ngClass]="prod_array"
     [ngSwitch]="product.status">
     <img class="card-img-top" src={{product.pimage}} alt="Card image cap">
 
@@ -8,17 +7,29 @@
         <h4 class="card-title mb-4">{{product.pid}}. {{product.pname | uppercase}} <span
                 (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span></h4>
 
-        <div [hidden]="productDetail">
-            <p class="card-text">{{product.pdesc}}</p>
-            <app-counter></app-counter>
-            <h5>{{product.price | currency: "INR"}}</h5>
+                <div [hidden]="productDetail" *ngSwitchCase="'In Stock'">
+                    <p class="card-text alert alert-success">{{product.pdesc}}</p>
+                    <app-counter></app-counter>
+                    <h5>{{product.price | currency: "INR"}}</h5>
+        
+                </div>
+                <div [hidden]="productDetail" *ngSwitchCase="'Few In Stock'">
+                    <p class="card-text alert alert-warning">{{product.pdesc}}</p>
+                    <app-counter></app-counter>
+                    <h5>{{product.price | currency: "INR"}}</h5>
+        
+                </div>
+                <div [hidden]="productDetail" *ngSwitchCase="'Out Of Stock'">
+                    <p class="card-text alert alert-danger">{{product.pdesc}}</p>
+                    <app-counter></app-counter>
+                    <h5>{{product.price | currency: "INR"}}</h5>
+        
+                </div>
 
-        </div>
-
-        <button *ngSwitchCase="'In Stock'" class="btn btn-outline-success" type="submit">In Stock</button>
-        <button *ngSwitchCase="'Few In Stock'" class="btn btn-outline-warning" type="submit" style="color:black;">Few In
+        <button *ngSwitchCase="'In Stock'" class="btn btn-outline-success" type="submit" (click)="InStock()">In Stock</button>
+        <button *ngSwitchCase="'Few In Stock'" class="btn btn-outline-warning" type="submit" (click)="FewInStock()" style="color:black;">Few In
             Stock</button>
-        <button *ngSwitchCase="'Out Of Stock'" class="btn btn-outline-danger" type="submit">Out Of
+        <button *ngSwitchCase="'Out Of Stock'" class="btn btn-outline-danger" type="submit" (click)="OutOfStock()">Out Of
             Stock</button>
     </div>
 </div>

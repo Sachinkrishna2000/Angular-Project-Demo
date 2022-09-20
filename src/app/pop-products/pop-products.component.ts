@@ -50,5 +50,13 @@ export class PopProductsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  prod:cards=new cards();
 
+}
+class cards{
+  widthh:boolean=true;
+  shadoww:boolean=true;
+  background:boolean=true;
+  borderr:boolean=true;
+  maxx:boolean=true;
 }

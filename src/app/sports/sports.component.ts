@@ -48,5 +48,17 @@ export class SportsComponent implements OnInit {
   OutOfStock(){
     alert("Oops!!! Currently This Item Isn't Available. Please Try Again Next Time.")
   }
+  prod:cards=new cards();
+
+//prod_array:string[]=['widthh','shadoww','background','borderr','maxx'];
 
 }
+class cards{
+  widthh:boolean=true;
+  shadoww:boolean=true;
+  background:boolean=true;
+  borderr:boolean=true;
+  maxx:boolean=true;
+}
+
+
