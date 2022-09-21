@@ -1,0 +1,14 @@
+.prodimg{
+    height:60px;
+    width:60px;
+    /* margin-left:100px; */
+    margin-top:10px;
+    margin-bottom:10px;
+    /* border-radius:10px; */
+
+}
+
+tr:hover{
+    background-color: gold;
+    color:black;
+}

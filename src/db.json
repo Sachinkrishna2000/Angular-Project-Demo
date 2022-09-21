@@ -1,13 +1,12 @@
 {
-    "posts": [
+  "posts": [
     {
       "id": "1",
       "pname": "OnePlus 10T",
+      "pdesc": "12GB RAM,256GB ROM Snapdragon 8+ Processor, 4500 mAh, 150W Fast Charging",
+      "price": "52999",
       "status": "In Stock",
-      "price":"54999",
-      "color": "green",
-      "pimage":"https://m.media-amazon.com/images/I/61mIUCd-37L._SL1500_.jpg",
-      "pdesc":"12GB RAM,256GB ROM Snapdragon 8+ Processor, 4800 mAh, 150W Fast Charging"
+      "pimage": "https://m.media-amazon.com/images/I/61mIUCd-37L._SL1500_.jpg"
     },
     {
       "id": "2",
@@ -22,55 +21,55 @@
       "id": "3",
       "pname": "Asus ROG 5",
       "status": "In Stock",
-      "price":"49999",
+      "price": "49999",
       "color": "green",
-      "pimage":"https://m.media-amazon.com/images/I/61gor7EwOlL._AC_SX522_.jpg",
-      "pdesc":"8GB RAM, 128GB Storage, Qualcomm® 660 Processor, 144Hz, AMOLED Display"
+      "pimage": "https://m.media-amazon.com/images/I/61gor7EwOlL._AC_SX522_.jpg",
+      "pdesc": "8GB RAM, 128GB Storage, Qualcomm® 660 Processor, 144Hz, AMOLED Display"
     },
     {
       "id": "4",
       "pname": "POCO F3 GT",
       "status": "In Stock",
-      "price":"28999",
+      "price": "28999",
       "color": "green",
-      "pimage":"https://www.notebookcheck.net/uploads/tx_nbc2/XiaomiPocoF3GT.jpg",
-      "pdesc":"6 GB RAM | 128 GB ROM  MediaTek Dimensity 1200 Prcsr 5065mAh Bat, Full HD+ Display"
+      "pimage": "https://www.notebookcheck.net/uploads/tx_nbc2/XiaomiPocoF3GT.jpg",
+      "pdesc": "6 GB RAM | 128 GB ROM  MediaTek Dimensity 1200 Prcsr 5065mAh Bat, Full HD+ Display"
     },
     {
       "id": "5",
       "pname": "Acer Nitro 5",
       "status": "Out Of Stock",
-      "price":"59999",
+      "price": "59999",
       "color": "red",
-      "pimage":"https://m.media-amazon.com/images/I/71+kGr+5LrL._SX450_.jpg",
-      "pdesc":"Intel Core i5-10300H processor NVIDIA GeForce GTX 1650 GC, 1 TB HDD + 256 GB SSD Storage"
+      "pimage": "https://m.media-amazon.com/images/I/71+kGr+5LrL._SX450_.jpg",
+      "pdesc": "Intel Core i5-10300H processor NVIDIA GeForce GTX 1650 GC, 1 TB HDD + 256 GB SSD Storage"
     },
     {
       "id": "6",
       "pname": "HP Pavillion ",
       "status": "In Stock",
-      "price":"89999",
+      "price": "89999",
       "color": "green",
-      "pimage":"https://m.media-amazon.com/images/I/71-mNJLIR5L._AC_SL1500_.jpg",
-      "pdesc":" AMD Ryzen 5 4600H Processor NVIDIA GeForce GTX 1650 GC 8GB DDR4 RAM, 512 GB Storage"
+      "pimage": "https://m.media-amazon.com/images/I/71-mNJLIR5L._AC_SL1500_.jpg",
+      "pdesc": " AMD Ryzen 5 4600H Processor NVIDIA GeForce GTX 1650 GC 8GB DDR4 RAM, 512 GB Storage"
     },
     {
       "id": "7",
       "pname": "Samsung Galaxy s20 ultra",
       "status": "Few In Stock",
-      "price":"92999",
+      "price": "92999",
       "color": "yellow",
-      "pimage":"https://m.media-amazon.com/images/I/61i9rG1L94S._AC_SX466_.jpg",
-      "pdesc":"12GB RAM 128GB Storage  Exynos 9 Octa 990 Processor 5000mAh Bat Full HD+ Display"
+      "pimage": "https://m.media-amazon.com/images/I/61i9rG1L94S._AC_SX466_.jpg",
+      "pdesc": "12GB RAM 128GB Storage  Exynos 9 Octa 990 Processor 5000mAh Bat Full HD+ Display"
     },
     {
       "id": "8",
       "pname": "ASUS TUF Gaming",
       "status": "In Stock",
-      "price":"92990",
+      "price": "92990",
       "color": "green",
-      "pimage":"https://m.media-amazon.com/images/I/71XkMLayGAL._SL1500_.jpg",
-      "pdesc":"Intel Core i7-11800H 11th Gen, NVIDIA GeForce RTX 3050 GC, 8GB RAM 1TB SSD Storage"
+      "pimage": "https://m.media-amazon.com/images/I/71XkMLayGAL._SL1500_.jpg",
+      "pdesc": "Intel Core i7-11800H 11th Gen, NVIDIA GeForce RTX 3050 GC, 8GB RAM 1TB SSD Storage"
     },
     {
       "id": "9",
@@ -78,105 +77,112 @@
       "status": "Out Of Stock",
       "price": "28999",
       "color": "yellow",
-      "pimage":"https://m.media-amazon.com/images/I/617MPEZB5mL._SL1500_.jpg",
-      "pdesc":"8GB RAM | 128GB Storage Mediatek Dimensity 1300 Processor, 90 Hz AMOLED Display"
+      "pimage": "https://m.media-amazon.com/images/I/617MPEZB5mL._SL1500_.jpg",
+      "pdesc": "8GB RAM | 128GB Storage Mediatek Dimensity 1300 Processor, 90 Hz AMOLED Display"
     },
     {
-        "pid":10,
-        "pname":"Samsung Refrigerator",
-        "pdesc":"657 litres capacity with Inverter and Water_dispenser ,Frost-free side-by-side refrigerator",
-        "status":"In Stock",
-        "price":174999,
-        "pimage":"https://m.media-amazon.com/images/I/51vvhIN7wpL._SY500_.jpg"
+      "pid": 10,
+      "pname": "Samsung Refrigerator",
+      "pdesc": "657 litres capacity with Inverter and Water_dispenser ,Frost-free side-by-side refrigerator",
+      "status": "In Stock",
+      "price": 174999,
+      "pimage": "https://m.media-amazon.com/images/I/51vvhIN7wpL._SY500_.jpg"
     },
     {
-        "id":11,
-        "pname":"LG Refrigerator",
-        "pdesc":"889 Ltr | Instaview Door-in-Door Quick Plumbed Ice & Water Dispenser with UV Nano",
-        "status":"Few In Stock",
-        "price":267990,
-        "pimage":"https://bestbuycyprus.com/265304-large_default/lg-instaview-door-in-door-gmx945mc9f-multi-door-fridge-freezer.jpg"
+      "id": 11,
+      "pname": "LG Refrigerator",
+      "pdesc": "889 Ltr | Instaview Door-in-Door Quick Plumbed Ice & Water Dispenser with UV Nano",
+      "status": "Few In Stock",
+      "price": 267990,
+      "pimage": "https://bestbuycyprus.com/265304-large_default/lg-instaview-door-in-door-gmx945mc9f-multi-door-fridge-freezer.jpg"
     },
     {
-        "id":12,
-        "pname":"Whirpool Washing Machine",
-        "pdesc":"6.5KG, Wattage - 360 W, Maximum Spin Speed - 740 RPM  Smart Sensors, Auto Tub Clean",
-        "status":"Out Of Stock",
-        "price":18990,
-        "pimage":"https://sathya.in/media/50291/catalog/whirlpool-65kg-whitemagic-classic-genx-rosewoodwine-fully-automatic-top-load-washing-machine.jpg"
+      "id": 12,
+      "pname": "Whirpool Washing Machine",
+      "pdesc": "6.5KG, Wattage - 360 W, Maximum Spin Speed - 740 RPM  Smart Sensors, Auto Tub Clean",
+      "status": "Out Of Stock",
+      "price": 18990,
+      "pimage": "https://sathya.in/media/50291/catalog/whirlpool-65kg-whitemagic-classic-genx-rosewoodwine-fully-automatic-top-load-washing-machine.jpg"
     },
     {
-        "id":13,
-        "pname":"Bosch Washing Machine",
-        "pdesc":"7 KG Cap with In - built Heater 1200 RPM Spinning Speed , Fully Automatic Front Load",
-        "status":"In Stock",
-        "price":34499,
-        "pimage":"https://m.media-amazon.com/images/I/71laDnTjKPL._SL1500_.jpg"
+      "id": 13,
+      "pname": "Bosch Washing Machine",
+      "pdesc": "7 KG Cap with In - built Heater 1200 RPM Spinning Speed , Fully Automatic Front Load",
+      "status": "In Stock",
+      "price": 34499,
+      "pimage": "https://m.media-amazon.com/images/I/71laDnTjKPL._SL1500_.jpg"
     },
     {
-        "id":14,
-        "pname":"LG Microwave Oven",
-        "pdesc":"28L Capacity Programmable, Auto_cook, Control_panel_lock, Self-cleaning,Turntable",
-        "status":"Few In Stock",
-        "price":18999,
-        "pimage":"https://m.media-amazon.com/images/I/61B4gL3g+qL._SL1500_.jpg"
+      "id": 14,
+      "pname": "LG Microwave Oven",
+      "pdesc": "28L Capacity Programmable, Auto_cook, Control_panel_lock, Self-cleaning,Turntable",
+      "status": "Few In Stock",
+      "price": 18999,
+      "pimage": "https://m.media-amazon.com/images/I/61B4gL3g+qL._SL1500_.jpg"
     },
     {
-        "id":15,
-        "pname":"Samsung Microwave Oven",
-        "pdesc":"28L Capacity, Touch Keypad, Auto Cook, Preheat/Reheat, Defrost Turntable ,Child Lock",
-        "status":"Out Of Stock",
-        "price":11590,
-        "pimage":"https://m.media-amazon.com/images/I/717Kju6Tu2L._SL1500_.jpg"
+      "id": 15,
+      "pname": "Samsung Microwave Oven",
+      "pdesc": "28L Capacity, Touch Keypad, Auto Cook, Preheat/Reheat, Defrost Turntable ,Child Lock",
+      "status": "Out Of Stock",
+      "price": 11590,
+      "pimage": "https://m.media-amazon.com/images/I/717Kju6Tu2L._SL1500_.jpg"
     },
     {
-        "id":16,
-        "pname":"Adidas Shoes",
-        "pdesc":"Running Shoes, Rubber Grip with Canvas Material, Wash Proof",
-        "status":"In Stock",
-        "price":2300,
-        "pimage":"https://5.imimg.com/data5/SELLER/Default/2021/7/UF/SD/GL/96403645/whatsapp-image-2021-07-24-at-11-41-15-am-250x250.jpeg"
+      "id": 16,
+      "pname": "Adidas Shoes",
+      "pdesc": "Running Shoes, Rubber Grip with Canvas Material, Wash Proof",
+      "status": "In Stock",
+      "price": 2300,
+      "pimage": "https://5.imimg.com/data5/SELLER/Default/2021/7/UF/SD/GL/96403645/whatsapp-image-2021-07-24-at-11-41-15-am-250x250.jpeg"
     },
     {
-        "id":17,
-        "pname":"Puma Shoes ",
-        "pdesc":"Ferrari Design Rubber Shoes, Canvas Material Wash Proof",
-        "status":"Few In Stock",
-        "price":4500,
-        "pimage":"https://5.imimg.com/data5/ANDROID/Default/2021/3/EA/QN/YM/93153508/img-20210324-wa0046-jpg-500x500.jpg"
+      "id": 17,
+      "pname": "Puma Shoes ",
+      "pdesc": "Ferrari Design Rubber Shoes, Canvas Material Wash Proof",
+      "status": "Few In Stock",
+      "price": 4500,
+      "pimage": "https://5.imimg.com/data5/ANDROID/Default/2021/3/EA/QN/YM/93153508/img-20210324-wa0046-jpg-500x500.jpg"
     },
     {
-        "id":18,
-        "pname":"Nike Shoes",
-        "pdesc":"Running & Racing Shoes, Canvas Material, Wash Proof ",
-        "status":"Out Of Stock",
-        "price":2999,
-        "pimage":"https://4.imimg.com/data4/IF/HG/ANDROID-56647035/product-500x500.jpeg"
+      "id": 18,
+      "pname": "Nike Shoes",
+      "pdesc": "Running & Racing Shoes, Canvas Material, Wash Proof ",
+      "status": "Out Of Stock",
+      "price": 2999,
+      "pimage": "https://4.imimg.com/data4/IF/HG/ANDROID-56647035/product-500x500.jpeg"
     },
     {
-        "id":19,
-        "pname":"Bose Quitecomfort 35",
-        "pdesc":"Wireless with Dedicated Mic Noise Cancellation, Bluetooth 5.1",
-        "status":"In Stock",
-        "price":19999,
-        "pimage":"https://m.media-amazon.com/images/I/51JbsHSktkL._SL1500_.jpg"
+      "id": 19,
+      "pname": "Bose Quitecomfort 35",
+      "pdesc": "Wireless with Dedicated Mic Noise Cancellation, Bluetooth 5.1",
+      "status": "In Stock",
+      "price": 19999,
+      "pimage": "https://m.media-amazon.com/images/I/51JbsHSktkL._SL1500_.jpg"
     },
     {
-        "id":20,
-        "pname":"Boat Rockrez 550",
-        "pdesc":"Wireless with Mic, 500mAH Battery ,Noise Cancellation",
-        "status":"Few In Stock",
-        "price":1999,
-        "pimage":"https://cdn1.smartprix.com/rx-iybx5LieJ-w1200-h1200/ybx5LieJ.jpg"
+      "id": 20,
+      "pname": "Boat Rockrez 550",
+      "pdesc": "Wireless with Mic, 500mAH Battery ,Noise Cancellation",
+      "status": "Few In Stock",
+      "price": 1999,
+      "pimage": "https://cdn1.smartprix.com/rx-iybx5LieJ-w1200-h1200/ybx5LieJ.jpg"
     },
     {
-        "id":21,
-        "pname":"Skull Candy hesh anc",
-        "pdesc":"Wireless Bluetooth with Mic, Noise cancellation, 22Hrs Battery",
-        "status":"Out Of Stock",
-        "price":9999,
-        "pimage":"https://m.media-amazon.com/images/I/81-R7tWdkqL._SL1500_.jpg"
+      "id": 21,
+      "pname": "Skull Candy hesh anc",
+      "pdesc": "Wireless Bluetooth with Mic, Noise cancellation, 22Hrs Battery",
+      "status": "Out Of Stock",
+      "price": 9999,
+      "pimage": "https://m.media-amazon.com/images/I/81-R7tWdkqL._SL1500_.jpg"
+    },
+    {
+      "id": 22,
+      "pname": "Samsung M51",
+      "pdesc": "5000mAH Battery, AmoLED Display, 60HZ Refresh Rate",
+      "price": "22999",
+      "status": "In Stock",
+      "pimage": "https://comprarmovilesya.com/wp-content/uploads/2020/11/samsung_m51.jpg"
     }
-
   ]
 }
