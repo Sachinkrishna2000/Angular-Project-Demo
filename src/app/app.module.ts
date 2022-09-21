@@ -7,6 +7,7 @@ import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { ProductsComponent } from './products/products.component';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AboutComponent } from './about/about.component';
 import { UserComponent } from './user/user.component';
@@ -24,6 +25,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
 
 import { ContactsComponent } from './contacts/contacts.component';
+import { ProductdetailsComponent } from './productdetails/productdetails.component';
 
 
 @NgModule({
@@ -46,14 +48,16 @@ import { ContactsComponent } from './contacts/contacts.component';
     ApplianceComponent,
     MusicComponent,
     RegisterComponent,
-    ContactsComponent
+    ContactsComponent,
+    ProductdetailsComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
