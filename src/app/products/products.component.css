@@ -34,14 +34,16 @@ h5{
 }
 
 .btn{
-    width:50%;
-    margin-left: 25%;
+    width:100%;
+    
     text-align: center;
-    justify-items: center;
-    align-items: center;
+    
+     /* justify-items: left;  */
+     /* align-items: left;  */
     border: 2px solid black;
 
 }
+
 /*.card{
     box-shadow: 8px 8px 8px crimson;
     display: flex;

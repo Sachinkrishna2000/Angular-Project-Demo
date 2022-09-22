@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-nav',
@@ -7,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  constructor(private cartSvc:CartService) { }
   title = 'TECHKART';
+  cartCount: number=0;
 
   public logo = "https://cdn-icons-png.flaticon.com/512/1697/1697039.png";
   
@@ -32,6 +34,21 @@ export class NavComponent implements OnInit {
   }
   
   ngOnInit(): void {
+    //Cart count
+    this.cartSvc.getCartItems().subscribe (     
+      (response) =>
+       {        
+        this.cartCount=response.length;
+        console.log(this.cartCount);
+       }
+     ) 
+    this.cartSvc.countSubject.subscribe (     
+      (response) =>
+       {        
+        this.cartCount=response;
+        console.log(this.cartCount);
+       }
+     ) 
   }
 
 }

@@ -36,11 +36,8 @@ h5{
 }
 
 .btn{
-    width:50%;
-    margin-left: 25%;
+    width:100%;
     text-align: center;
-    justify-items: center;
-    align-items: center;
     border: 2px solid black;
 
 }

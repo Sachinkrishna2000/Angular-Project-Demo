@@ -26,6 +26,7 @@ import { RegisterComponent } from './register/register.component';
 
 import { ContactsComponent } from './contacts/contacts.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
+import { CartItemsComponent } from './cart-items/cart-items.component';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
     MusicComponent,
     RegisterComponent,
     ContactsComponent,
-    ProductdetailsComponent
+    ProductdetailsComponent,
+    CartItemsComponent
     
   ],
   imports: [

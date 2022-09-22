@@ -1,9 +1,9 @@
-<div class="container-fluid" style="background-color: black; min-height: 100vh;">
+<!-- <div class="container-fluid" style="background-color: black; min-height: 100vh;"> -->
     <br>
     <h1 style="text-align: center; color:red; ">
         <marquee>Registration/Sign Up</marquee>
     </h1><br><br>
-    <div class="bodyy">
+    <!--<div class="bodyy">
         <form [formGroup]="myForm" novalidate action="">
             <fieldset
                 style="width:50%; margin-left: 25%; background-color: gold;color: blue;border-radius: 15px;border:5px solid red;border-style:double;box-shadow: 10px 10px 5px red;">
@@ -145,7 +145,57 @@
             <h3 style="color:blanchedalmond; text-align:center; margin-top:20px;">User Details</h3>
             <pre style="color:white; text-align: center; justify-content: center; font-size: 15px;">{{myForm.value | json}}</pre>
         </div>
+    </div>-->
+    <div class="mt-5">
+        <div class="col-md-12 min-vh-100 d-flex flex-column">
+            <div class="login-form">
+                <form class="mt-5" [formGroup]="registerForm" (ngSubmit)="submitHandler()">
+                    <h2 class="text-center secondary ms-mb-m main-heading ng-binding">Signup with Amazon</h2>
+                    <br>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="username" formControlName="username"
+                            placeholder="Enter Username">
+                        <label class="error ng-binding" *ngIf="submitted && f['username'].invalid">Name is required
+                        </label>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="useremail" formControlName="useremail"
+                            placeholder="Enter email">
+                        <label class="error ng-binding" *ngIf="submitted && f['useremail'].invalid">Email is required
+                            </label>
+                        <label class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['useremail']">Email must
+                            be a
+                            valid email address</label>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password" formControlName="password"
+                            placeholder="Enter password">
+                        <label class="error ng-binding" *ngIf="submitted && f['password'].invalid">Password is
+                            required</label>
+                        
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="number" class="form-control" name="mobile" formControlName="mobile"
+                            placeholder="Enter Mobile number">
+                        <label class="error ng-binding" *ngIf="submitted && f['mobile'].invalid">Mobile number is required</label>
+                        
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-warning">Register</button>
+                    <div class="text-center ms-mt-x ms-mb-m register-already-account" style="padding-top:30px">
+                        <span class="ms-fs-12 ng-binding">Already have an account?
+                            <a class="secondary ng-binding" href="login">
+                                Login!
+                            </a>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-</div>
+<!-- </div> -->
 
 

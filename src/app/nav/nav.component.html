@@ -33,7 +33,10 @@
           </ul>
         <form class="d-flex">
           <input class="form-control me-2" #productname placeholder="Enter product name"type="search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit" (click)="search_product(productname.value);productname.value=''">Search</button>
+          <button class="btn btn-outline-success me-2" type="submit" (click)="search_product(productname.value);productname.value=''">Search</button>
+          <button routerLink='cartitems' style="height:42px;border:none; background-color: gold;">
+            <span class="fa-solid fa-cart-plus"><sup class="text-dark" style="font-size:10px;margin-left: 3px;">{{cartCount}}</sup></span>
+          </button>
           <app-search [product]="productentered"></app-search>
         </form>
       </div>

@@ -1,8 +1,10 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
 import{Router} from "@angular/router";
-
+import { environment } from 'src/environments/environment';
 import { Validators } from '@angular/forms';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-register',
@@ -10,11 +12,20 @@ import { Validators } from '@angular/forms';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
+   //public registerForm!:FormGroup;
+   userurl = environment.userapi;
+   registerForm = new FormGroup({
+     username: new FormControl(''),
+     useremail: new FormControl(''),
+     password: new FormControl(''),
+     mobile: new FormControl('')
+   })
 
-  constructor(private router:Router) { }
+  constructor(private formBuilder: FormBuilder, private http: HttpClient, private router: Router) { }
+  submitted = false;
  
 
-  myForm: FormGroup | any;
+  /*myForm: FormGroup | any;
   username: FormControl | any;
   useremail: FormControl | any;
   password: FormControl | any;
@@ -24,10 +35,10 @@ export class RegisterComponent implements OnInit {
   gender: FormControl | any;
   address: FormControl | any;
   payment: FormControl | any;
-  agreement:FormControl | any;
+  agreement:FormControl | any;*/
 
   ngOnInit(): void {
-    this.username = new FormControl('', [Validators.required,Validators.pattern('[A-Za-z]*'), Validators.minLength(6), Validators.maxLength(16)]);
+    /*this.username = new FormControl('', [Validators.required,Validators.pattern('[A-Za-z]*'), Validators.minLength(6), Validators.maxLength(16)]);
     this.useremail = new FormControl('', [Validators.required,Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$')]);
     this.password = new FormControl('', [Validators.required, Validators.pattern('[A-Za-z0-9]*'), Validators.minLength(8), Validators.maxLength(14)]);
     this.mobile = new FormControl('', [Validators.required, Validators.pattern('[0-9]*')]);
@@ -47,21 +58,55 @@ export class RegisterComponent implements OnInit {
       'gender': this.gender,
       'address': this.address,
       'payment':this.payment,
-      'agreement':this.agreement
-    
+      'agreement':this.agreement })*/
+
+      this.registerForm = this.formBuilder.group({
+        username: ['', Validators.required, Validators.pattern('[A-Za-z]*'), Validators.minLength(6), Validators.maxLength(16)],
+        useremail: ['', Validators.required],
+        password: ['', Validators.required],
+        mobile: ['', Validators.required]
+      });
+    }
+    get f() { return this.registerForm.controls; }
+    submitHandler() {
+      this.submitted = true;
+      if (this.registerForm.invalid) {
+        return;
+      }
+     
+  
+      this.http.post<any>(this.userurl, this.registerForm.value)
+        .subscribe(res => {
+          const Toast = Swal.mixin({
+            toast: true,
+            position: 'top',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+          })
       
-    })
+          Toast.fire({
+            icon: 'success',
+            title: 'Sign Up Successful'
+          })
+          this.registerForm.reset();
+          this.router.navigate(['login']);
+        })
+  
+    }
+      
+    
     
    
     
   }
- OnSubmit(){
+ /*OnSubmit(){
  
   alert("Thank You For Registering");
   this.router.navigate(['/']);
- }
+ }*/
     
     
   
 
-}
+

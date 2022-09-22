@@ -17,7 +17,7 @@
     },
     {
         "pid":3,
-        "pname":"Whirpool Washing Machine",
+        "pname":"Whirpool Wash Machine",
         "pdesc":"6.5KG, Wattage - 360 W, Maximum Spin Speed - 740 RPM  Smart Sensors, Auto Tub Clean",
         "status":"Out Of Stock",
         "price":18990,
@@ -25,7 +25,7 @@
     },
     {
         "pid":4,
-        "pname":"Bosch Washing Machine",
+        "pname":"Bosch Wash Machine",
         "pdesc":"7 KG Cap with In - built Heater 1200 RPM Spinning Speed , Fully Automatic Front Load",
         "status":"In Stock",
         "price":34499,

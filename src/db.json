@@ -12,10 +12,10 @@
       "id": "2",
       "pname": "Acer Predator",
       "status": "Few In Stock",
-      "price":"288799",
+      "price": "288799",
       "color": "yellow",
-      "pimage":"https://www.gadgetsnow.com/photo/78877550/Acer-Predator-Helios-300-Gaming-Laptop-Intel-i7-10750H-NVIDIA-GeForce-RTX-2070-Max-Q-8GB-156-FHD-240Hz-3ms-IPS-16GB-Dual-Channel-DDR4-512GB-NVMe-SSD-1TB-HDD-WiFi-6-RGB-KB-PH315-53-71VG.jpg",
-      "pdesc":"Intel i7-10750H Processor, NVIDIA GeForce RTX 2070 GC, 16GB RAM, 512GB Storage"
+      "pimage": "https://www.gadgetsnow.com/photo/78877550/Acer-Predator-Helios-300-Gaming-Laptop-Intel-i7-10750H-NVIDIA-GeForce-RTX-2070-Max-Q-8GB-156-FHD-240Hz-3ms-IPS-16GB-Dual-Channel-DDR4-512GB-NVMe-SSD-1TB-HDD-WiFi-6-RGB-KB-PH315-53-71VG.jpg",
+      "pdesc": "Intel i7-10750H Processor, NVIDIA GeForce RTX 2070 GC, 16GB RAM, 512GB Storage"
     },
     {
       "id": "3",
@@ -183,6 +183,117 @@
       "price": "22999",
       "status": "In Stock",
       "pimage": "https://comprarmovilesya.com/wp-content/uploads/2020/11/samsung_m51.jpg"
+    }
+  ],
+  "users": [
+    {
+      "username": "john@gmail.com",
+      "useremail": "pallavikatari@gmail.com",
+      "password": "John@123",
+      "mobile": "3456783564",
+      "id": 1
+    },
+    {
+      "username": "Admin",
+      "useremail": "admin@gmail.com",
+      "password": "admin@123",
+      "mobile": "9898989898",
+      "id": 3
+    },
+    {
+      "username": "Jancy",
+      "useremail": "jancy@gmail.com",
+      "password": "jancy123",
+      "mobile": "9835674657",
+      "id": 4
+    },
+    {
+      "username": "Harry",
+      "useremail": "harry@gmail.com",
+      "password": "",
+      "mobile": "",
+      "id": 5
+    },
+    {
+      "username": "Harry",
+      "useremail": "harry@gmail.com",
+      "password": null,
+      "mobile": null,
+      "id": 6
+    },
+    {
+      "username": "Sam",
+      "useremail": "sam@gmail.com",
+      "password": "",
+      "mobile": "",
+      "id": 7
+    },
+    {
+      "username": "Sachin",
+      "useremail": "sach@gmail.com",
+      "password": "",
+      "mobile": "",
+      "id": 8
+    },
+    {
+      "username": "",
+      "useremail": "sach@gmail.com",
+      "password": "",
+      "mobile": 9886754678,
+      "id": 9
+    },
+    {
+      "username": "John ",
+      "useremail": "john123@gmail.com",
+      "password": "",
+      "mobile": "",
+      "id": 10
+    },
+    {
+      "username": "John",
+      "useremail": "john234@gmail.com",
+      "password": "",
+      "mobile": "",
+      "id": 11
+    },
+    {
+      "username": "Krishna",
+      "useremail": "krsna@gmail.com",
+      "password": "",
+      "mobile": "",
+      "id": 12
+    },
+    {
+      "username": "Samit",
+      "useremail": "samit@gmail.com",
+      "password": "samit1234",
+      "mobile": 7584937467,
+      "id": 13
+    },
+    {
+      "username": "Suraj",
+      "useremail": "suraj@gmail.com",
+      "password": "",
+      "mobile": "",
+      "id": 14
+    }
+  ],
+  "cart": [
+    {
+      "pname": "Acer Predator",
+      "pdesc": "Intel i7-10750H Processor, NVIDIA GeForce RTX 2070 GC, 16GB RAM, 512GB Storage",
+      "price": "288799",
+      "pimage": "https://www.gadgetsnow.com/photo/78877550/Acer-Predator-Helios-300-Gaming-Laptop-Intel-i7-10750H-NVIDIA-GeForce-RTX-2070-Max-Q-8GB-156-FHD-240Hz-3ms-IPS-16GB-Dual-Channel-DDR4-512GB-NVMe-SSD-1TB-HDD-WiFi-6-RGB-KB-PH315-53-71VG.jpg",
+      "quantity": 1,
+      "id": 2
+    },
+    {
+      "pname": "Puma Shoes ",
+      "pdesc": "Ferrari Design Rubber Shoes, Canvas Material Wash Proof",
+      "price": 4500,
+      "pimage": "https://5.imimg.com/data5/ANDROID/Default/2021/3/EA/QN/YM/93153508/img-20210324-wa0046-jpg-500x500.jpg",
+      "quantity": 2,
+      "id": 3
     }
   ]
 }

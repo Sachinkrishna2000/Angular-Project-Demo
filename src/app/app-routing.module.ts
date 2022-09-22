@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { AllProductsComponent } from './all-products/all-products.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
-
+import { CartItemsComponent } from './cart-items/cart-items.component';
 import { ApplianceComponent } from './home-appliance/appliance/appliance.component';
 import { HomeApplianceComponent } from './home-appliance/home-appliance.component';
 import { HomeComponent } from './home/home.component';
@@ -22,7 +22,8 @@ const routes: Routes = [
   {path:'home_appliance',component:ApplianceComponent},
   {path:'sports',component:MusicComponent},
   {path:'allproducts',component:AllProductsComponent},
-  {path:'productdetails',component:ProductdetailsComponent}
+  {path:'productdetails',component:ProductdetailsComponent},
+  {path:'cartitems',component:CartItemsComponent}
 ];
 
 @NgModule({

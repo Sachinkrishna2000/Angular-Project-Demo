@@ -1,42 +1,61 @@
 <!-- class="col col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-4 mb-4"-->
 <!-- <div class="container-fluid p-0 m-0 align-items-center justify-content-center d-flex" style=" background-color: black;"> -->
-    <!-- <div class="row w-100 w-0"> -->
-        <!-- <div class="col col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-4 mb-4"> -->
-            <div class="card mx-auto"
-                [ngSwitch]="product.status" [ngClass]="prod_array">
-                <img class="card-img-top" src={{product.pimage}} alt="Card image cap">
+<!-- <div class="row w-100 w-0"> -->
+<!-- <div class="col col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-4 mb-4"> -->
+<div class="card mx-auto" [ngSwitch]="product.status" [ngClass]="prod_array">
+    <img class="card-img-top" src={{product.pimage}} alt="Card image cap">
 
-                <div class="card-body">
+    <div class="card-body">
 
-                    <h4 class="card-title mb-4">{{product.pid}}. {{product.pname | uppercase}} <span
-                            (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span></h4>
+        <h4 class="card-title mb-4">{{product.pid}}. {{product.pname | uppercase}} <span
+                (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span></h4>
 
-                            <div [hidden]="productDetail" *ngSwitchCase="'In Stock'">
-                                <p class="card-text alert alert-success">{{product.pdesc}}</p>
-                                <app-counter></app-counter>
-                                <h5>{{product.price | currency: "INR"}}</h5>
-                    
-                            </div>
-                            <div [hidden]="productDetail" *ngSwitchCase="'Few In Stock'">
-                                <p class="card-text alert alert-warning">{{product.pdesc}}</p>
-                                <app-counter></app-counter>
-                                <h5>{{product.price | currency: "INR"}}</h5>
-                    
-                            </div>
-                            <div [hidden]="productDetail" *ngSwitchCase="'Out Of Stock'">
-                                <p class="card-text alert alert-danger">{{product.pdesc}}</p>
-                                <app-counter></app-counter>
-                                <h5>{{product.price | currency: "INR"}}</h5>
-                    
-                            </div>
+        <div [hidden]="productDetail" *ngSwitchCase="'In Stock'">
+            <p class="card-text">{{product.pdesc}}</p>
+            <input type="number" name="quantity" [(ngModel)]="quantity" style="width:50px;border-radius:10px;" min="1"
+                max="25">Quantity:
+            <h5 class="alert alert-success">{{product.price | currency: "INR"}}</h5>
 
-                    <button *ngSwitchCase="'In Stock'" class="btn btn-outline-success" type="submit" (click)="InStock()">In Stock</button>
-                    <button *ngSwitchCase="'Few In Stock'" class="btn btn-outline-warning" type="submit"
-                        style="color:black;" (click)="FewInStock()">Few In Stock</button>
-                    <button *ngSwitchCase="'Out Of Stock'" class="btn btn-outline-danger" type="submit" (click)="OutOfStock()">Out Of
-                        Stock</button>
-                </div>
+        </div>
+        <div [hidden]="productDetail" *ngSwitchCase="'Few In Stock'">
+            <p class="card-text">{{product.pdesc}}</p>
+            <input type="number" name="quantity" [(ngModel)]="quantity" style="width:50px;border-radius:10px;" min="1"
+                max="25">Quantity:
+            <h5 class="alert alert-warning">{{product.price | currency: "INR"}}</h5>
+
+        </div>
+        <div [hidden]="productDetail" *ngSwitchCase="'Out Of Stock'">
+            <p class="card-text">{{product.pdesc}}</p>
+            <input type="number" name="quantity" [(ngModel)]="quantity" style="width:50px;border-radius:10px;" min="1"
+                max="25">Quantity:
+            <h5 class="alert alert-danger">{{product.price | currency: "INR"}}</h5>
+
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <button *ngSwitchCase="'In Stock'" class="btn btn-outline-success" type="submit" (click)="InStock()">In
+                    Stock</button>
             </div>
-         <!-- </div>  -->
-    <!-- </div> -->
+            <div class="col-6">
+                <button class="btn btn-dark" *ngSwitchCase="'In Stock'" (click)="addToCart(product)">Add to
+                    Cart</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <button *ngSwitchCase="'Few In Stock'" class="btn btn-outline-warning" type="submit"
+                    style="color:black; font-size: 15px;" (click)="FewInStock()">Few In Stock</button>
+            </div>
+            <div class="col-6">
+                <button class="btn btn-dark" *ngSwitchCase="'Few In Stock'" (click)="addToCart(product)">Add to
+                    Cart</button>
+            </div>
+        </div>
+        <button *ngSwitchCase="'Out Of Stock'" class="btn btn-outline-danger" type="submit" (click)="OutOfStock()">Out
+            Of
+            Stock</button>
+    </div>
+</div>
+<!-- </div>  -->
+<!-- </div> -->
 <!-- </div> -->
