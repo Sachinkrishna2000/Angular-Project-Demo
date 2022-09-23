@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit {
   }
   sendmsg(){
     
-    alert("Thank You For Your Valuable Feedback");
+    alert("Thank You For Your Valuable Time");
     
   }
   

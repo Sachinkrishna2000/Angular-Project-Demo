@@ -7,6 +7,7 @@ import { UserService } from '../user.service';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
+  search : String ="";
 
   constructor(private authService:UserService,private cartSvc:CartService) { }
   auth:boolean=false;

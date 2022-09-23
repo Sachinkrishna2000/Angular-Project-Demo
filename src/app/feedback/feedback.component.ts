@@ -26,7 +26,7 @@ export class FeedbackComponent implements OnInit {
     this.registerForm = this.formBuilder.group({
       username: ['', Validators.required, Validators.pattern('[A-Za-z]*'), Validators.minLength(6), Validators.maxLength(16)],
       useremail: ['', Validators.required],
-      feedback: ['', Validators.required],
+      comment: ['', Validators.required],
       
     });
   }

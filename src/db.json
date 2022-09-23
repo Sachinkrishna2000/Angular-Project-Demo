@@ -222,13 +222,6 @@
       "id": 6
     },
     {
-      "username": "Steve",
-      "useremail": "steve@gmail.com",
-      "password": "steve1234",
-      "mobile": 8463827284,
-      "id": 7
-    },
-    {
       "id": 8,
       "username": "Samy",
       "useremail": "samy@gmail.com",
@@ -248,17 +241,30 @@
       "password": "alex1234",
       "mobile": 9877656789,
       "id": 10
+    },
+    {
+      "username": "ABC",
+      "useremail": "abc@gmail.com",
+      "password": "",
+      "mobile": 9987656787,
+      "id": 11
+    },
+    {
+      "username": "steve",
+      "useremail": "steve@gmail.com",
+      "password": "steve1234",
+      "mobile": 9875567876,
+      "id": 12
+    },
+    {
+      "id": 13,
+      "username": "Steve",
+      "useremail": "steve@gmail.com",
+      "password": "steve1234",
+      "mobile": 8463827284
     }
   ],
   "cart": [
-    {
-      "pname": "Acer Predator",
-      "pdesc": "Intel i7-10750H Processor, NVIDIA GeForce RTX 2070 GC, 16GB RAM, 512GB Storage",
-      "price": "288799",
-      "pimage": "https://www.gadgetsnow.com/photo/78877550/Acer-Predator-Helios-300-Gaming-Laptop-Intel-i7-10750H-NVIDIA-GeForce-RTX-2070-Max-Q-8GB-156-FHD-240Hz-3ms-IPS-16GB-Dual-Channel-DDR4-512GB-NVMe-SSD-1TB-HDD-WiFi-6-RGB-KB-PH315-53-71VG.jpg",
-      "quantity": 1,
-      "id": 1
-    },
     {
       "pname": "HP Pavillion ",
       "pdesc": " AMD Ryzen 5 4600H Processor NVIDIA GeForce GTX 1650 GC 8GB DDR4 RAM, 512 GB Storage",
@@ -266,6 +272,14 @@
       "pimage": "https://m.media-amazon.com/images/I/71-mNJLIR5L._AC_SL1500_.jpg",
       "quantity": 1,
       "id": 2
+    },
+    {
+      "pname": "Acer Predator",
+      "pdesc": "Intel i7-10750H Processor, NVIDIA GeForce RTX 2070 GC, 16GB RAM, 512GB Storage",
+      "price": "288799",
+      "pimage": "https://www.gadgetsnow.com/photo/78877550/Acer-Predator-Helios-300-Gaming-Laptop-Intel-i7-10750H-NVIDIA-GeForce-RTX-2070-Max-Q-8GB-156-FHD-240Hz-3ms-IPS-16GB-Dual-Channel-DDR4-512GB-NVMe-SSD-1TB-HDD-WiFi-6-RGB-KB-PH315-53-71VG.jpg",
+      "quantity": 1,
+      "id": 3
     }
   ],
   "feedback": [
@@ -276,10 +290,16 @@
       "id": 1
     },
     {
-      "username": "Alex",
-      "useremail": "alex@gmail.com",
-      "feedback": "Very Good Products",
+      "username": "Samit",
+      "useremail": "samit@gmail.com",
+      "comment": "Good",
       "id": 2
+    },
+    {
+      "username": "Steve",
+      "useremail": "steve@gmail.com",
+      "comment": "sdsdsa",
+      "id": 3
     }
   ]
 }
