@@ -27,6 +27,9 @@ import { RegisterComponent } from './register/register.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
 import { CartItemsComponent } from './cart-items/cart-items.component';
+import { LoginComponent } from './login/login.component';
+import { UserdetailsComponent } from './userdetails/userdetails.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 
 @NgModule({
@@ -51,7 +54,10 @@ import { CartItemsComponent } from './cart-items/cart-items.component';
     RegisterComponent,
     ContactsComponent,
     ProductdetailsComponent,
-    CartItemsComponent
+    CartItemsComponent,
+    LoginComponent,
+    UserdetailsComponent,
+    FeedbackComponent
     
   ],
   imports: [

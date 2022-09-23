@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../cart.service';
-
+import { UserService } from '../user.service';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -8,7 +8,8 @@ import { CartService } from '../cart.service';
 })
 export class NavComponent implements OnInit {
 
-  constructor(private cartSvc:CartService) { }
+  constructor(private authService:UserService,private cartSvc:CartService) { }
+  auth:boolean=false;
   title = 'TECHKART';
   cartCount: number=0;
 
@@ -34,6 +35,13 @@ export class NavComponent implements OnInit {
   }
   
   ngOnInit(): void {
+    this.authService.authSubject.subscribe(
+      data => 
+      {
+        console.log('auth inside nav component: ' + data);
+        this.auth = data;
+      }
+    );
     //Cart count
     this.cartSvc.getCartItems().subscribe (     
       (response) =>

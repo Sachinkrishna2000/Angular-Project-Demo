@@ -1,0 +1,40 @@
+<div class="container-fluid" style="background-color: black; min-height: auto;">
+    <div class="container">
+        <h2 [style.text-shadow]="'3px 2px 2px red'" [style.color]="'gold'"><marquee>FEEDBACK</marquee></h2>
+        <div class="row w-100 w-0">
+            <div class="col-lg-6 mb-5">
+                <img src="https://th.bing.com/th/id/OIP.YfBUtyN5OWrvz83sOaLDpQHaH7?pid=ImgDet&rs=1">
+            </div>
+            <div class="col-lg-6 mb-5">
+                <!--  [formGroup]="registerForm" (ngSubmit)="submitHandler()  -->
+                <form [formGroup]="registerForm" (ngSubmit)="submitHandler()">
+                    <h3 class="text-center secondary ms-mb-m main-heading ng-binding">Feedback Form</h3>
+                    <br>
+                    <div class="form-group">
+                        <label class="mb-2" style="font-size: 17px;">Username</label><br>
+                        <input type="text" class="form-control" name="username" formControlName="username"
+                            placeholder="Enter Username">
+                       
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label class="mb-2" style="font-size: 17px;">Email-ID</label><br>
+                        <input type="email" class="form-control" name="useremail" formControlName="useremail"
+                            placeholder="Enter email">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label class="mb-2" style="font-size: 17px;">Feedback</label><br>
+                        <textarea type="text" class="form-control" name="feedback" formControlName="feedback"
+                            placeholder="Enter Comments"></textarea>
+                       
+                        
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-warning">Submit</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div> 

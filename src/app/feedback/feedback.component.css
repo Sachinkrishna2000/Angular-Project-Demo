@@ -1,0 +1,79 @@
+input {
+    width: 80%;
+    margin-left: 10%;
+    padding: 7px;
+    border: 2px solid black;
+}
+textarea {
+    width: 80%;
+    margin-left: 10%;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+label {
+    color:black;
+    margin-left: 10%;
+}
+.error{
+    color:red;
+}
+
+form {
+    padding: 20px;
+    background-color: gold;
+    margin-left: 5%;
+    width: 90%;
+    border-style: inset;
+    border-radius: 10px;
+    border-color: 4px solid red;
+    box-shadow: 6px 6px 6px red;
+    opacity: 0.7;
+    height: 500px;
+}
+
+form:hover {
+    color:black;
+    background-color: gold;
+    transform:scale(1.07);
+    opacity: 1.0;
+    transition: 2s;
+   
+
+}
+
+button {
+    width:80%;
+    background-color: black;
+    color:white;
+    margin-left:10%;
+}
+button:hover{
+    background-color: white;
+    color:black;
+    border: 2px solid black;
+}
+
+span {
+    width: 100%;
+}
+h2{
+    color:gold;
+    font-size: 40px;
+    font-style: italic;
+    padding: 20px;
+    margin-bottom:20px;
+    text-align: center;
+}
+img{
+    /* height: auto; */
+    margin-left: 5%;
+    width: 90%;
+    opacity: 0.7;
+    height: 500px;
+}
+img:hover{
+    transition: 2s;
+    opacity: 1.0;
+    transform: scale(1.07);
+}

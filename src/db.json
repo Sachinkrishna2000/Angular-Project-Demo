@@ -187,11 +187,11 @@
   ],
   "users": [
     {
-      "username": "john@gmail.com",
-      "useremail": "pallavikatari@gmail.com",
+      "id": 1,
+      "username": "john",
+      "useremail": "john@gmail.com",
       "password": "John@123",
-      "mobile": "3456783564",
-      "id": 1
+      "mobile": "3456783564"
     },
     {
       "username": "Admin",
@@ -208,74 +208,46 @@
       "id": 4
     },
     {
-      "username": "Harry",
-      "useremail": "harry@gmail.com",
-      "password": "",
-      "mobile": "",
-      "id": 5
-    },
-    {
-      "username": "Harry",
-      "useremail": "harry@gmail.com",
-      "password": null,
-      "mobile": null,
-      "id": 6
-    },
-    {
-      "username": "Sam",
-      "useremail": "sam@gmail.com",
-      "password": "",
-      "mobile": "",
-      "id": 7
-    },
-    {
-      "username": "Sachin",
-      "useremail": "sach@gmail.com",
-      "password": "",
-      "mobile": "",
-      "id": 8
-    },
-    {
-      "username": "",
-      "useremail": "sach@gmail.com",
-      "password": "",
-      "mobile": 9886754678,
-      "id": 9
-    },
-    {
-      "username": "John ",
-      "useremail": "john123@gmail.com",
-      "password": "",
-      "mobile": "",
-      "id": 10
-    },
-    {
-      "username": "John",
-      "useremail": "john234@gmail.com",
-      "password": "",
-      "mobile": "",
-      "id": 11
-    },
-    {
-      "username": "Krishna",
-      "useremail": "krsna@gmail.com",
-      "password": "",
-      "mobile": "",
-      "id": 12
-    },
-    {
       "username": "Samit",
       "useremail": "samit@gmail.com",
       "password": "samit1234",
       "mobile": 7584937467,
-      "id": 13
+      "id": 5
     },
     {
-      "username": "Suraj",
-      "useremail": "suraj@gmail.com",
-      "password": "",
-      "mobile": "",
-      "id": 14
+      "username": "rob",
+      "useremail": "rob@gmail.com",
+      "password": "rob123",
+      "mobile": 84383647383,
+      "id": 6
+    },
+    {
+      "username": "Steve",
+      "useremail": "steve@gmail.com",
+      "password": "steve1234",
+      "mobile": 8463827284,
+      "id": 7
+    },
+    {
+      "id": 8,
+      "username": "Samy",
+      "useremail": "samy@gmail.com",
+      "password": "samy1234",
+      "mobile": 9877656789
+    },
+    {
+      "id": 9,
+      "username": "Mitchell",
+      "useremail": "mitchell@gmail.com",
+      "password": "mitchell1234",
+      "mobile": 9887656778
+    },
+    {
+      "username": "Alex",
+      "useremail": "alex@gmail.com",
+      "password": "alex1234",
+      "mobile": 9877656789,
+      "id": 10
     }
   ],
   "cart": [
@@ -285,15 +257,29 @@
       "price": "288799",
       "pimage": "https://www.gadgetsnow.com/photo/78877550/Acer-Predator-Helios-300-Gaming-Laptop-Intel-i7-10750H-NVIDIA-GeForce-RTX-2070-Max-Q-8GB-156-FHD-240Hz-3ms-IPS-16GB-Dual-Channel-DDR4-512GB-NVMe-SSD-1TB-HDD-WiFi-6-RGB-KB-PH315-53-71VG.jpg",
       "quantity": 1,
-      "id": 2
+      "id": 1
     },
     {
-      "pname": "Puma Shoes ",
-      "pdesc": "Ferrari Design Rubber Shoes, Canvas Material Wash Proof",
-      "price": 4500,
-      "pimage": "https://5.imimg.com/data5/ANDROID/Default/2021/3/EA/QN/YM/93153508/img-20210324-wa0046-jpg-500x500.jpg",
-      "quantity": 2,
-      "id": 3
+      "pname": "HP Pavillion ",
+      "pdesc": " AMD Ryzen 5 4600H Processor NVIDIA GeForce GTX 1650 GC 8GB DDR4 RAM, 512 GB Storage",
+      "price": "89999",
+      "pimage": "https://m.media-amazon.com/images/I/71-mNJLIR5L._AC_SL1500_.jpg",
+      "quantity": 1,
+      "id": 2
+    }
+  ],
+  "feedback": [
+    {
+      "username": "john",
+      "useremail": "john@gmail.com",
+      "comment": "Very Good Service and Good Quality Products",
+      "id": 1
+    },
+    {
+      "username": "Alex",
+      "useremail": "alex@gmail.com",
+      "feedback": "Very Good Products",
+      "id": 2
     }
   ]
 }

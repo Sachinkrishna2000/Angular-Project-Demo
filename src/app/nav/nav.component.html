@@ -15,16 +15,25 @@
           <li class="nav-item">
             <a class="nav-link" routerLink="about">About Us</a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown" *ngIf="auth">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Products
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" routerLink="productdetails">Product Details</a></li>
               <li><a class="dropdown-item" routerLink="allproducts">All Products</a></li>
               <li><a class="dropdown-item" routerLink="products">Mobile & Laptops</a></li>
               <li><a class="dropdown-item" routerLink="home_appliance">Home Appliances</a></li>
               <li><a class="dropdown-item" routerLink="sports">Sports & Music</a></li>
+            </ul>
+          </li>      
+          <li class="nav-item dropdown" *ngIf="auth">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Details
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" routerLink="productdetails">Product Details</a></li>
+              <li><a class="dropdown-item" routerLink="userdetails">User Details</a></li>
+              <li><a class="dropdown-item" routerLink="feedback">Feedback Details</a></li>
             </ul>
           </li>      
           <li class="nav-item">
@@ -32,12 +41,16 @@
           </li>
           </ul>
         <form class="d-flex">
+          
+          
           <input class="form-control me-2" #productname placeholder="Enter product name"type="search" aria-label="Search">
           <button class="btn btn-outline-success me-2" type="submit" (click)="search_product(productname.value);productname.value=''">Search</button>
-          <button routerLink='cartitems' style="height:42px;border:none; background-color: gold;">
+          <app-search class="me-2" [product]="productentered"></app-search>
+          <button class="me-2" routerLink='cartitems' style="height:42px;border:none; background-color: gold;" *ngIf="auth">
             <span class="fa-solid fa-cart-plus"><sup class="text-dark" style="font-size:10px;margin-left: 3px;">{{cartCount}}</sup></span>
           </button>
-          <app-search [product]="productentered"></app-search>
+          <button class="btn btn-outline-warning me-2" type="submit" style="color:black; background-color: gold;" routerLink="login"
+          *ngIf="auth">Logout</button>
         </form>
       </div>
     </div>

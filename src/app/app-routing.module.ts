@@ -13,8 +13,12 @@ import { RegisterComponent } from './register/register.component';
 import { SearchComponent } from './search/search.component';
 import { MusicComponent } from './sports/music/music.component';
 import { SportsComponent } from './sports/sports.component';
+import { LoginComponent } from './login/login.component';
+import { UserdetailsComponent } from './userdetails/userdetails.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 const routes: Routes = [
+  {path:'login',component:LoginComponent},
   {path:'',component:HomeComponent},
   {path:'about',component:AboutComponent},
   {path:'products',component:DealsComponent},
@@ -23,7 +27,9 @@ const routes: Routes = [
   {path:'sports',component:MusicComponent},
   {path:'allproducts',component:AllProductsComponent},
   {path:'productdetails',component:ProductdetailsComponent},
-  {path:'cartitems',component:CartItemsComponent}
+  {path:'cartitems',component:CartItemsComponent},
+  {path:'userdetails',component:UserdetailsComponent},
+  {path:'feedback',component:FeedbackComponent}
 ];
 
 @NgModule({

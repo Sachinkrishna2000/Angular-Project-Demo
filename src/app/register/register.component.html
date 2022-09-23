@@ -1,10 +1,8 @@
-<!-- <div class="container-fluid" style="background-color: black; min-height: 100vh;"> -->
+<div class="container-fluid" style="background-color: black; min-height: 150vh;">
     <br>
-    <h1 style="text-align: center; color:red; ">
-        <marquee>Registration/Sign Up</marquee>
-    </h1><br><br>
+    <h1 [style.text-shadow]="'3px 2px 2px red'" [style.color]="'gold'"><marquee>Registration/SignUp</marquee></h1>
     <!--<div class="bodyy">
-        <form [formGroup]="myForm" novalidate action="">
+        <form [formGroup]="registerForm" novalidate action="" (ngSubmit)="submitHandler()">
             <fieldset
                 style="width:50%; margin-left: 25%; background-color: gold;color: blue;border-radius: 15px;border:5px solid red;border-style:double;box-shadow: 10px 10px 5px red;">
                 <legend style="color:crimson">Registration Details</legend>
@@ -146,13 +144,14 @@
             <pre style="color:white; text-align: center; justify-content: center; font-size: 15px;">{{myForm.value | json}}</pre>
         </div>
     </div>-->
-    <div class="mt-5">
+    <div class="mt-5 mb-5">
         <div class="col-md-12 min-vh-100 d-flex flex-column">
             <div class="login-form">
                 <form class="mt-5" [formGroup]="registerForm" (ngSubmit)="submitHandler()">
-                    <h2 class="text-center secondary ms-mb-m main-heading ng-binding">Signup with Amazon</h2>
+                    <h2 class="text-center secondary ms-mb-m main-heading ng-binding">Signup Form</h2>
                     <br>
                     <div class="form-group">
+                        <label class="mb-2" style="font-size: 17px;">Username</label><br>
                         <input type="text" class="form-control" name="username" formControlName="username"
                             placeholder="Enter Username">
                         <label class="error ng-binding" *ngIf="submitted && f['username'].invalid">Name is required
@@ -160,6 +159,7 @@
                     </div>
                     <br>
                     <div class="form-group">
+                        <label class="mb-2" style="font-size: 17px;">Email-ID</label><br>
                         <input type="email" class="form-control" name="useremail" formControlName="useremail"
                             placeholder="Enter email">
                         <label class="error ng-binding" *ngIf="submitted && f['useremail'].invalid">Email is required
@@ -170,6 +170,7 @@
                     </div>
                     <br>
                     <div class="form-group">
+                        <label class="mb-2" style="font-size: 17px;">Password</label><br>
                         <input type="password" class="form-control" name="password" formControlName="password"
                             placeholder="Enter password">
                         <label class="error ng-binding" *ngIf="submitted && f['password'].invalid">Password is
@@ -178,6 +179,7 @@
                     </div>
                     <br>
                     <div class="form-group">
+                        <label class="mb-2" style="font-size: 17px;">Contact No.</label><br>
                         <input type="number" class="form-control" name="mobile" formControlName="mobile"
                             placeholder="Enter Mobile number">
                         <label class="error ng-binding" *ngIf="submitted && f['mobile'].invalid">Mobile number is required</label>
@@ -196,6 +198,14 @@
             </div>
         </div>
     </div>
-<!-- </div> -->
+    <footer class="bg-dark text-center text-lg-start" id="foot">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: gold; font-weight: bold;">
+          © 2020 Copyright:
+          <a class="text-center p-3" style="color: black;">www.TechKart.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+ </div>
 
 

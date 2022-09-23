@@ -48,8 +48,13 @@ h5{
 .card-img-top{
     border: 3px solid navy;
 }
+.card{
+    opacity:0.8;
+}
 .card:hover{
     transform: scale(1.08);
+    opacity: 1.0;
+    transition: 1s;
  
 }
 .card-body{

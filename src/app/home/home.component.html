@@ -58,10 +58,14 @@
     </button>
   </div>
   <app-pop-products></app-pop-products>
+  
+  <app-advertisement></app-advertisement>
+  
+
   <div class="container">
     <h1 class="text-center m-3" style="color:gold;">SUBSCRIBE TO OUR NEWSLETTER</h1>
-
-  </div>
+</div>
+  
   <section class="bg-dark text-center p-5 mt-4">
 
     <h3 class="text-white">SUBSCRIBE NOW</h3>
@@ -70,16 +74,18 @@
       <button type="button" class="btn btn-default" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: gold;">Subscribe<i
           class="fa fa-envelope"></i></button>
     </form>
+  
 
   </section>
+  
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header" style="background-color: gold;">
           <h5 class="modal-title" id="exampleModalLabel">Feedback Form</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body" style="background-color: black; color:white;">
           <form>
             <div class="mb-3">
               <label for="recipient-name" class="col-form-label">User Name</label>
@@ -91,13 +97,21 @@
             </div>
           </form>
         </div>
-        <div class="modal-footer">
+        <div class="modal-footer" style="background-color: gold;">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary" (click)="sendmsg()">Send message</button>
         </div>
       </div>
     </div>
   </div>
+  <footer class="bg-dark text-center text-lg-start" id="foot">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: gold; font-weight: bold;">
+      © 2020 Copyright:
+      <a class="text-center p-3" style="color: black;">www.TechKart.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
 
 
 </div>
