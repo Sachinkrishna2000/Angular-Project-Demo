@@ -154,27 +154,29 @@
                         <label class="mb-2" style="font-size: 17px;">Username</label><br>
                         <input type="text" class="form-control" name="username" formControlName="username"
                             placeholder="Enter Username">
-                        <label class="error ng-binding" *ngIf="submitted && f['username'].invalid">Name is required
-                        </label>
+                            <label class="error ng-binding" *ngIf="f['username'].errors?.['required']">Name is required</label>
+                            <label class="error ng-binding" *ngIf="f['username'].errors?.['pattern']">Name pattern not matched</label>
+                            <label class="error ng-binding" *ngIf="f['username'].errors?.['minlength']">Min. Length of characters should be 6</label>
+                            <label class="error ng-binding" *ngIf="f['username'].errors?.['maxlength']">Min. Length of characters is 14</label>
                     </div>
                     <br>
                     <div class="form-group">
                         <label class="mb-2" style="font-size: 17px;">Email-ID</label><br>
                         <input type="email" class="form-control" name="useremail" formControlName="useremail"
                             placeholder="Enter email">
-                        <label class="error ng-binding" *ngIf="submitted && f['useremail'].invalid">Email is required
-                            </label>
-                        <label class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['useremail']">Email must
-                            be a
-                            valid email address</label>
+                            <label class="error ng-binding" *ngIf="f['useremail'].errors?.['required']">Email is required</label>
+                            <label class="error ng-binding" *ngIf="f['useremail'].errors?.['pattern']">Email ID pattern not matched</label>
                     </div>
                     <br>
                     <div class="form-group">
                         <label class="mb-2" style="font-size: 17px;">Password</label><br>
                         <input type="password" class="form-control" name="password" formControlName="password"
                             placeholder="Enter password">
-                        <label class="error ng-binding" *ngIf="submitted && f['password'].invalid">Password is
-                            required</label>
+                            <label class="error ng-binding" *ngIf="f['password'].invalid">Password is
+                                required</label>
+                            <label class="error ng-binding" *ngIf="f['password'].errors?.['minlength']">Minimum Password
+                                Length is
+                                6 Characters</label>
                         
                     </div>
                     <br>
@@ -182,7 +184,10 @@
                         <label class="mb-2" style="font-size: 17px;">Contact No.</label><br>
                         <input type="number" class="form-control" name="mobile" formControlName="mobile"
                             placeholder="Enter Mobile number">
-                        <label class="error ng-binding" *ngIf="submitted && f['mobile'].invalid">Mobile number is required</label>
+                            <label class="error ng-binding" *ngIf="f['mobile'].invalid">Mobile number is
+                                required</label>
+                            <label class="error ng-binding" *ngIf="f['mobile'].errors?.['pattern']">Mobile number must
+                                be valid</label>
                         
                     </div>
                     <br>

@@ -30,6 +30,7 @@ import { CartItemsComponent } from './cart-items/cart-items.component';
 import { LoginComponent } from './login/login.component';
 import { UserdetailsComponent } from './userdetails/userdetails.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { FeedbackdetailsComponent } from './feedbackdetails/feedbackdetails.component';
 
 
 @NgModule({
@@ -57,7 +58,8 @@ import { FeedbackComponent } from './feedback/feedback.component';
     CartItemsComponent,
     LoginComponent,
     UserdetailsComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    FeedbackdetailsComponent
     
   ],
   imports: [

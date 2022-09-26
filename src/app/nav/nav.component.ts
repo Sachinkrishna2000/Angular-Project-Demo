@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+
 import { CartService } from '../cart.service';
 import { UserService } from '../user.service';
+import { UserModel } from '../user-model';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -36,6 +38,8 @@ export class NavComponent implements OnInit {
   }
   
   ngOnInit(): void {
+    // if(UserService.data=="admin@gmail.com")
+    
     this.authService.authSubject.subscribe(
       data => 
       {

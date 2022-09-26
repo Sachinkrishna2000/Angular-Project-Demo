@@ -16,7 +16,7 @@ export class ProductdetailsComponent implements OnInit {
   showAdd!: boolean;
   showUpdate!: boolean;
 
-  constructor(private formbuilder: FormBuilder, private api:ProductapiService) { }
+  constructor(private formbuilder: FormBuilder, private api:ProductapiService, private router:Router) { }
 
   ngOnInit(): void {
     this.formValue = this.formbuilder.group({
@@ -53,6 +53,7 @@ export class ProductdetailsComponent implements OnInit {
       alert("Something went wrong. Please check again!")
     })
   }
+  
 
   getProducts(){
     this.api.getProductDetails().subscribe(res=>{
@@ -97,6 +98,15 @@ export class ProductdetailsComponent implements OnInit {
       this.formValue.reset();
       this.getProducts();
     })
+  }
+  productdetails(){
+    this.router.navigate(['productdetails']);
+  }
+  userdetails(){
+    this.router.navigate(['userdetails']);
+  }
+  feedbackdetails(){
+    this.router.navigate(['feedbackdetails']);
   }
 
 }

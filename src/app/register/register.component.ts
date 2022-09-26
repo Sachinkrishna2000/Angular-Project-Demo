@@ -61,10 +61,10 @@ export class RegisterComponent implements OnInit {
       'agreement':this.agreement })*/
 
       this.registerForm = this.formBuilder.group({
-        username: ['', Validators.required, Validators.pattern('[A-Za-z]*'), Validators.minLength(6), Validators.maxLength(16)],
-        useremail: ['', Validators.required],
-        password: ['', Validators.required],
-        mobile: ['', Validators.required]
+        username: ['', [Validators.required, Validators.pattern('[A-Za-z]*'), Validators.minLength(4), Validators.maxLength(16)]],
+        useremail: ['', [Validators.required,Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]],
+        password: ['', [Validators.required, Validators.minLength(6)]],
+        mobile: ['', [Validators.required, Validators.pattern('[0-9]*')]]
       });
     }
     get f() { return this.registerForm.controls; }

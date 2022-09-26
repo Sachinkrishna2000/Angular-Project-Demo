@@ -41,7 +41,25 @@ get f() { return this.loginForm.controls; }
       const user=res.find((a:any)=>{
         return a.useremail === this.loginForm.value.useremail && a.password=== this.loginForm.value.password
       });
-      if(user){
+      if(user.useremail=="admin@gmail.com" && user.password=="admin1234")
+      {
+        const Toast = Swal.mixin({
+          toast: true,
+          position: 'top',
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true,
+        })
+
+        Toast.fire({
+          icon: 'success',
+          title: 'Admin Login Successful'
+        })
+        this.loginForm.reset();
+        this.router.navigate(['productdetails'])
+        this.userService.validateAuth(true);
+      }
+      else if(user){
         const Toast = Swal.mixin({
           toast: true,
           position: 'top',
@@ -52,7 +70,7 @@ get f() { return this.loginForm.controls; }
     
         Toast.fire({
           icon: 'success',
-          title: 'Login Successful'
+          title: 'User Login Successful'
         })
         this.loginForm.reset();
         this.router.navigate([''])

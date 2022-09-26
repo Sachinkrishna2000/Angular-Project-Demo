@@ -16,6 +16,7 @@ import { SportsComponent } from './sports/sports.component';
 import { LoginComponent } from './login/login.component';
 import { UserdetailsComponent } from './userdetails/userdetails.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { FeedbackdetailsComponent } from './feedbackdetails/feedbackdetails.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -29,7 +30,8 @@ const routes: Routes = [
   {path:'productdetails',component:ProductdetailsComponent},
   {path:'cartitems',component:CartItemsComponent},
   {path:'userdetails',component:UserdetailsComponent},
-  {path:'feedback',component:FeedbackComponent}
+  {path:'feedback',component:FeedbackComponent},
+  {path:'feedbackdetails',component:FeedbackdetailsComponent}
 ];
 
 @NgModule({

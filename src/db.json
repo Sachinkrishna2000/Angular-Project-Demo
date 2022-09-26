@@ -4,7 +4,7 @@
       "id": "1",
       "pname": "OnePlus 10T",
       "pdesc": "12GB RAM,256GB ROM Snapdragon 8+ Processor, 4500 mAh, 150W Fast Charging",
-      "price": "52999",
+      "price": "52000",
       "status": "In Stock",
       "pimage": "https://m.media-amazon.com/images/I/61mIUCd-37L._SL1500_.jpg"
     },
@@ -196,23 +196,23 @@
     {
       "username": "Admin",
       "useremail": "admin@gmail.com",
-      "password": "admin@123",
+      "password": "admin1234",
       "mobile": "9898989898",
       "id": 3
     },
     {
+      "id": 4,
       "username": "Jancy",
       "useremail": "jancy@gmail.com",
       "password": "jancy123",
-      "mobile": "9835674657",
-      "id": 4
+      "mobile": "9835674657"
     },
     {
-      "username": "Samit",
-      "useremail": "samit@gmail.com",
-      "password": "samit1234",
-      "mobile": 7584937467,
-      "id": 5
+      "id": 5,
+      "username": "Rohit",
+      "useremail": "rohit@gmail.com",
+      "password": "rohit1234",
+      "mobile": 7584937467
     },
     {
       "username": "rob",
@@ -233,7 +233,7 @@
       "username": "Mitchell",
       "useremail": "mitchell@gmail.com",
       "password": "mitchell1234",
-      "mobile": 9887656778
+      "mobile": 9887656349
     },
     {
       "username": "Alex",
@@ -243,35 +243,36 @@
       "id": 10
     },
     {
-      "username": "ABC",
-      "useremail": "abc@gmail.com",
-      "password": "",
-      "mobile": 9987656787,
-      "id": 11
-    },
-    {
-      "username": "steve",
-      "useremail": "steve@gmail.com",
-      "password": "steve1234",
-      "mobile": 9875567876,
-      "id": 12
-    },
-    {
-      "id": 13,
       "username": "Steve",
       "useremail": "steve@gmail.com",
       "password": "steve1234",
+      "mobile": 9875567876,
+      "id": 11
+    },
+    {
+      "id": 12,
+      "username": "sachin",
+      "useremail": "sachin@gmail.com",
+      "password": "sachin1234",
       "mobile": 8463827284
     }
   ],
   "cart": [
     {
-      "pname": "HP Pavillion ",
-      "pdesc": " AMD Ryzen 5 4600H Processor NVIDIA GeForce GTX 1650 GC 8GB DDR4 RAM, 512 GB Storage",
-      "price": "89999",
-      "pimage": "https://m.media-amazon.com/images/I/71-mNJLIR5L._AC_SL1500_.jpg",
+      "pname": "Puma Shoes ",
+      "pdesc": "Ferrari Design Rubber Shoes, Canvas Material Wash Proof",
+      "price": 4500,
+      "pimage": "https://5.imimg.com/data5/ANDROID/Default/2021/3/EA/QN/YM/93153508/img-20210324-wa0046-jpg-500x500.jpg",
       "quantity": 1,
-      "id": 2
+      "id": 4
+    },
+    {
+      "pname": "Boat Rockrez 550",
+      "pdesc": "Wireless with Mic, 500mAH Battery ,Noise Cancellation",
+      "price": 1999,
+      "pimage": "https://cdn1.smartprix.com/rx-iybx5LieJ-w1200-h1200/ybx5LieJ.jpg",
+      "quantity": 1,
+      "id": 5
     },
     {
       "pname": "Acer Predator",
@@ -279,7 +280,7 @@
       "price": "288799",
       "pimage": "https://www.gadgetsnow.com/photo/78877550/Acer-Predator-Helios-300-Gaming-Laptop-Intel-i7-10750H-NVIDIA-GeForce-RTX-2070-Max-Q-8GB-156-FHD-240Hz-3ms-IPS-16GB-Dual-Channel-DDR4-512GB-NVMe-SSD-1TB-HDD-WiFi-6-RGB-KB-PH315-53-71VG.jpg",
       "quantity": 1,
-      "id": 3
+      "id": 6
     }
   ],
   "feedback": [
@@ -298,8 +299,20 @@
     {
       "username": "Steve",
       "useremail": "steve@gmail.com",
-      "comment": "sdsdsa",
+      "comment": "Good",
       "id": 3
+    },
+    {
+      "username": "alex",
+      "useremail": "alex@gmail.com",
+      "comment": "Excellent",
+      "id": 4
+    },
+    {
+      "username": "Steve",
+      "useremail": "steve@gmail.com",
+      "comment": "Good",
+      "id": 5
     }
   ]
 }

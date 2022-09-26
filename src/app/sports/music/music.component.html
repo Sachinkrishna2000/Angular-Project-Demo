@@ -1,20 +1,24 @@
-<div class="container-fluid p-0 m-0 align-items-center justify-content-center d-flex" style=" background-color: black; min-height: calc( 100vh - 64px);">
-   
-    <!-- Row for the card-->
-    
-    <div class="row w-100 w-0">
-        <h2 [style.text-shadow]="'3px 2px 2px red'" [style.color]="'gold'"><marquee>Sports & Music</marquee></h2>
-        <!-- Column for card-->
-        <button type="button" class="btn btn-default" [style.background-color]="'gold'" [style.border]="'3px solid red'" [style.color]="'navy'" (click)="hide_products()">Show Products<i class="fa fa-arrow-down"></i></button>
-        <div class="row w-100 w-0 mx-auto" *ngIf="isVisible">
-            <app-sports class="col-lg-4 col-md-6 col-sm-12 mt-4 mb-4"  [product]="productItem" *ngFor="let productItem of sport"></app-sports>
-        </div>
-        
-        
-    </div>
-    
-    
-    
-    
-</div>
+<div class="container-fluid p-0 m-0 align-items-center justify-content-center d-flex"
+    style=" background-color: black; min-height: calc( 100vh - 64px);">
 
+    <!-- Row for the card-->
+
+    <div class="row w-100 w-0">
+        <h2 [style.text-shadow]="'3px 2px 2px red'" [style.color]="'gold'">
+            <marquee>Sports & Music</marquee>
+        </h2>
+        <!-- Column for card-->
+        <button type="button" class="btn btn-default" [style.background-color]="'gold'" [style.border]="'3px solid red'"
+            [style.color]="'navy'" (click)="hide_products()">Show Products<i class="fa fa-arrow-down"></i></button>
+        <div class="row w-100 w-0 mx-auto" *ngIf="isVisible">
+            <app-sports class="col-lg-4 col-md-6 col-sm-12 mt-4 mb-4" [product]="productItem"
+                *ngFor="let productItem of sport"></app-sports>
+        </div>
+
+
+    </div>
+
+
+
+
+</div>

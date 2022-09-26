@@ -1,0 +1,40 @@
+<div class="container-fluid" style="background-color: black; min-height:100vh;">
+  <div class="container-fluid bg-dark p-4">
+    <div class="row w-100">
+      <div class="col-lg-4">
+        <button class="btn btn-warning" type="submit" (click)="productdetails()">Product Details</button>
+      </div>
+      <div class="col-lg-4">
+        <button class="btn btn-warning" type="submit" (click)="userdetails()">User Details</button>
+      </div>
+      <div class="col-lg-4">
+        <button class="btn btn-warning" type="submit" (click)="feedbackdetails()">Feedback Details</button>
+      </div>
+    </div>
+    </div>
+<nav class="navbar navbar-dark" [style.background-color]="'gold'">
+    <div class="container-fluid">
+      <h1 style="color: black; font-size: 20px;">Feedback DETAILS</h1>
+     
+    </div>
+  </nav>
+  <table class="table table-bordered bg-dark" style="color:white; text-align: center;">
+    <thead>
+      <tr>
+        <th scope="col-1">User ID</th>
+        <th scope="col-2">User Name</th>
+        <th scope="col-4">User Email ID</th>
+        <th scope="col-1">Feedback</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of productData">
+        <td>{{product.id}}</td>
+        <td>{{product.username}}</td>
+        <td>{{product.useremail}}</td>
+        <td>{{product.comment}}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  

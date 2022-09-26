@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { UserModel } from '../user-model';
 import { UserapiService } from '../userapi.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-userdetails',
@@ -15,7 +16,7 @@ export class UserdetailsComponent implements OnInit {
   userData!: any;
   showAdd!: boolean;
   showUpdate!: boolean;
-  constructor(private formbuilder: FormBuilder, private api:UserapiService) { }
+  constructor(private formbuilder: FormBuilder, private api:UserapiService, private router:Router) { }
   submitted = false;
 
   ngOnInit(): void {
@@ -35,6 +36,7 @@ export class UserdetailsComponent implements OnInit {
     }
   }*/
   clickAddProduct(){
+    
     this.formValue.reset();
     this.showAdd = true;
     this.showUpdate = false;
@@ -46,7 +48,9 @@ export class UserdetailsComponent implements OnInit {
     this.userModelObj.password = this.formValue.value.password;
     this.userModelObj.mobile = this.formValue.value.mobile;
     
-
+    if (this.formValue.invalid) {
+      return;
+    }
     this.api.postUser(this.userModelObj).subscribe(res=>{
       console.log(res);
       alert("New User added successfully!")
@@ -94,6 +98,9 @@ export class UserdetailsComponent implements OnInit {
     this.userModelObj.useremail = this.formValue.value.useremail;
     this.userModelObj.password = this.formValue.value.password;
     this.userModelObj.mobile = this.formValue.value.mobile;
+    if (this.formValue.invalid) {
+      return;
+    }
   
     this.api.updateUser(this.userModelObj, this.userModelObj.id).subscribe(res=>{
       alert("The User is updated!")
@@ -103,6 +110,15 @@ export class UserdetailsComponent implements OnInit {
       this.formValue.reset();
       this.getUsers();
     })
+  }
+  productdetails(){
+    this.router.navigate(['productdetails']);
+  }
+  userdetails(){
+    this.router.navigate(['userdetails']);
+  }
+  feedbackdetails(){
+    this.router.navigate(['feedbackdetails']);
   }
 
 }

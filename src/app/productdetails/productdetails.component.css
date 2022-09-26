@@ -14,3 +14,13 @@ tr:hover{
     background-color: gold;
     color:black;
 }
+button{
+    width:100%;
+    border: 2px solid black;
+}
+
+button:hover{
+    background-color: white;
+    color:black;
+    border: 2px solid black;
+}
