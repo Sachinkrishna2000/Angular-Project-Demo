@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { map } from 'rxjs/operators';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-feedbackdetails',
@@ -12,8 +13,10 @@ export class FeedbackdetailsComponent implements OnInit {
 
   productData!: any;
   constructor(private http:HttpClient,private router:Router) { }
+  feedbackurl = environment.feedbackapi;
+
   getProductDetails(){
-    return this.http.get<any>("http://localhost:3000/feedback").pipe(map((res:any)=>{
+    return this.http.get<any>(this.feedbackurl).pipe(map((res:any)=>{
       return res;
     }))
   }

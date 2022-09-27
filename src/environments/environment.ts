@@ -3,10 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  userapi:"http://localhost:3000/users",
-  cartapi:"http://localhost:3000/cart",
-  feedbackapi:"http://localhost:3000/feedback"
+  production: true,
+  postsapi:"https://angular-project-demo123.herokuapp.com/posts",
+  userapi:"https://angular-project-demo123.herokuapp.com/users",
+  cartapi:"https://angular-project-demo123.herokuapp.com/cart",
+  feedbackapi:"https://angular-project-demo123.herokuapp.com/feedback"
 
 };
 
