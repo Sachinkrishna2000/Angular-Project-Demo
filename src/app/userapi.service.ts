@@ -11,7 +11,7 @@ export class UserapiService {
   constructor(private http:HttpClient) { }
   userurl = environment.userapi;
   postUser(data:any){
-    return this.http.post<any>(this.userurl, data).pipe(map((res:any)=>{
+    return this.http.post<any>(this.userurl,data).pipe(map((res:any)=>{
       return res;
     }))
   }

@@ -255,6 +255,13 @@
       "useremail": "sachin@gmail.com",
       "password": "sachin1234",
       "mobile": 8463827284
+    },
+    {
+      "id": 13,
+      "username": "Pollard",
+      "useremail": "pollard@gmail.com",
+      "password": "pollard1234",
+      "mobile": 988767567
     }
   ],
   "cart": [
